@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: elsarticle-num.bst
+Illegal, another \bibstyle command---line 97 of file main.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Database file #1: mendeley.bib
+Warning--I didn't find a database entry for "de"
+Warning--I didn't find a database entry for "pascanu2013construct"
+Warning--I didn't find a database entry for "pascanu2012difficulty"
+Warning--empty journal in Langkvist2014AModeling
+Warning--empty journal in Zhu2017DeepUber
+Warning--empty journal in ChoLearningTranslation
+Warning--empty journal in ZahariaSpark:Sets
+Warning--empty journal in ZahariaDiscretizedClusters
+Warning--empty journal in MalhotraLongSeries
+Warning--empty booktitle in Gers2001ApplyingApproaches
+Warning--empty publisher in Gers2001ApplyingApproaches
+Warning--empty journal in BahdanauNEURALTRANSLATE
+Warning--empty journal in CinarPosition-basedRNNs
+Warning--empty journal in QinAPrediction
+Warning--empty journal in SatyanarayananTheComputing
+You've used 20 entries,
+            2937 wiz_defined-function locations,
+            798 strings with 10647 characters,
+and the built_in function-call counts, 5784 in all, are:
+= -- 497
+> -- 239
+< -- 3
++ -- 93
+- -- 73
+* -- 442
+:= -- 805
+add.period$ -- 26
+call.type$ -- 20
+change.case$ -- 20
+chr.to.int$ -- 0
+cite$ -- 32
+duplicate$ -- 201
+empty$ -- 624
+format.name$ -- 90
+if$ -- 1469
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 18
+newline$ -- 91
+num.names$ -- 18
+pop$ -- 166
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 361
+stack$ -- 0
+substring$ -- 169
+swap$ -- 63
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 12
+while$ -- 33
+width$ -- 22
+write$ -- 173
+(There was 1 error message)

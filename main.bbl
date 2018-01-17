@@ -1,0 +1,148 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Jiang2017Pytheas:Exploration-Exploitation}
+J.~Jiang, S.~Sun, V.~Sekar, H.~Zhang, {Pytheas: Enabling Data-Driven Quality of
+  Experience Optimization Using Group-Based Exploration-Exploitation}, 14th
+  USENAIX Symposium on NSDI.
+
+\bibitem{Mao2017NeuralPensieve}
+H.~Mao, R.~Netravali, M.~Alizadeh,
+  \href{http://dx.doi.org/10.1145/3098822.3098843}{{Neural Adaptive Video
+  Streaming with Pensieve}}, Mohammad Alizadeh MIT Computer Science and
+  Artificial Intelligence Laboratory (2017) 197--210\href
+  {http://dx.doi.org/10.1145/3098822.3098843}
+  {\path{doi:10.1145/3098822.3098843}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1145/3098822.3098843}
+
+\bibitem{Langkvist2014AModeling}
+M.~L{\"{a}}ngkvist, L.~Karlsson, A.~Loutfi,
+  \href{https://ac.els-cdn.com/S0167865514000221/1-s2.0-S0167865514000221-main.pdf?_tid=73b58696-de42-11e7-99f2-00000aab0f27&acdnat=1512976445_b3a701a33285bf903a86108fc3a2b956}{{A
+  review of unsupervised feature learning and deep learning for time-series
+  modeling}}\href {http://dx.doi.org/10.1016/j.patrec.2014.01.008}
+  {\path{doi:10.1016/j.patrec.2014.01.008}}.
+\newline\urlprefix\url{https://ac.els-cdn.com/S0167865514000221/1-s2.0-S0167865514000221-main.pdf?_tid=73b58696-de42-11e7-99f2-00000aab0f27&acdnat=1512976445_b3a701a33285bf903a86108fc3a2b956}
+
+\bibitem{Zhu2017DeepUber}
+L.~Zhu, N.~Laptev, {Deep and Confident Prediction for Time Series at Uber}\href
+  {http://dx.doi.org/10.1109/ICDMW.2017.19} {\path{doi:10.1109/ICDMW.2017.19}}.
+
+\bibitem{Bengio1994LearningDifficult}
+Y.~Bengio, P.~Simard, P.~Frasconi,
+  \href{http://www.ncbi.nlm.nih.gov/pubmed/18267787
+  http://ieeexplore.ieee.org/document/279181/}{{Learning long-term dependencies
+  with gradient descent is difficult}}, IEEE Transactions on Neural Networks
+  5~(2) (1994) 157--166.
+\newblock \href {http://dx.doi.org/10.1109/72.279181}
+  {\path{doi:10.1109/72.279181}}.
+\newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/18267787
+  http://ieeexplore.ieee.org/document/279181/}
+
+\bibitem{ChoLearningTranslation}
+K.~Cho, B.~Van~Merri{\"{e}}nboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares,
+  H.~Schwenk, Y.~Bengio,
+  \href{http://www.statnlp.org/wp-content/uploads/2016/02/rnn.pdf}{{Learning
+  Phrase Representations using RNN Encoder–Decoder for Statistical Machine
+  Translation}}.
+\newline\urlprefix\url{http://www.statnlp.org/wp-content/uploads/2016/02/rnn.pdf}
+
+\bibitem{ZahariaSpark:Sets}
+M.~Zaharia, M.~Chowdhury, M.~J. Franklin, S.~Shenker, I.~Stoica,
+  \href{http://www1.ece.neu.edu/~ningfang/SimPaper/hotcloud_spark.pdf}{{Spark:
+  Cluster Computing with Working Sets}}.
+\newline\urlprefix\url{http://www1.ece.neu.edu/~ningfang/SimPaper/hotcloud_spark.pdf}
+
+\bibitem{ZahariaDiscretizedClusters}
+M.~Zaharia, T.~Das, H.~Li, S.~Shenker, I.~Stoica,
+  \href{https://www.sics.se/%7eamir/cloud14/papers/2012%20-%20Discretized%20Streams:%20An%20Efficient%20and%20Fault-Tolerant%20Model%20for%20Stream%20Processing%20on%20Large%20Clusters%20%28HotCloud%29.pdf}{{Discretized
+  Streams: An Efficient and Fault-Tolerant Model for Stream Processing on Large
+  Clusters}}.
+\newline\urlprefix\url{https://www.sics.se/%7eamir/cloud14/papers/2012%20-%20Discretized%20Streams:%20An%20Efficient%20and%20Fault-Tolerant%20Model%20for%20Stream%20Processing%20on%20Large%20Clusters%20%28HotCloud%29.pdf}
+
+\bibitem{Yeom2016Data-DrivenMatrices}
+J.-S. Yeom, J.~J. Thiagarajan, A.~Bhatele, G.~Bronevetsky, T.~Kolev,
+  \href{http://ieeexplore.ieee.org/document/7836412/}{{Data-Driven Performance
+  Modeling of Linear Solvers for Sparse Matrices}}, in: 2016 7th International
+  Workshop on Performance Modeling, Benchmarking and Simulation of High
+  Performance Computer Systems (PMBS), IEEE, 2016, pp. 32--42.
+\newblock \href {http://dx.doi.org/10.1109/PMBS.2016.009}
+  {\path{doi:10.1109/PMBS.2016.009}}.
+\newline\urlprefix\url{http://ieeexplore.ieee.org/document/7836412/}
+
+\bibitem{Hochreiter1997LongMemory}
+S.~Hochreiter, J.~Schmidhuber, {Long Short-Term Memory}, Neural Computation
+  9~(8) (1997) 1735--1780.
+\newblock \href {http://dx.doi.org/10.1162/neco.1997.9.8.1735}
+  {\path{doi:10.1162/neco.1997.9.8.1735}}.
+
+\bibitem{BuildingKeras}
+\href{https://blog.keras.io/building-autoencoders-in-keras.html}{{Building
+  Autoencoders in Keras}}.
+\newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
+
+\bibitem{MalhotraLongSeries}
+P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
+  \href{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}{{Long
+  Short Term Memory Networks for Anomaly Detection in Time Series}}.
+\newline\urlprefix\url{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}
+
+\bibitem{Gers2001ApplyingApproaches}
+F.~A. Gers, D.~Eck, J.~Schmidhuber,
+  \href{http://link.springer.com/10.1007/3-540-44668-0_93}{{Applying LSTM to
+  Time Series Predictable through Time-Window Approaches}}, 2001, pp. 669--676.
+\newblock \href {http://dx.doi.org/10.1007/3-540-44668-0{\_}93}
+  {\path{doi:10.1007/3-540-44668-0{\_}93}}.
+\newline\urlprefix\url{http://link.springer.com/10.1007/3-540-44668-0_93}
+
+\bibitem{BahdanauNEURALTRANSLATE}
+D.~Bahdanau, K.~Cho, Y.~Bengio,
+  \href{https://arxiv.org/pdf/1409.0473.pdf}{{NEURAL MACHINE TRANSLATION BY
+  JOINTLY LEARNING TO ALIGN AND TRANSLATE}}.
+\newline\urlprefix\url{https://arxiv.org/pdf/1409.0473.pdf}
+
+\bibitem{CinarPosition-basedRNNs}
+Y.~Cinar, H.~Mirisaee, P.~Goswami, E.~Gaussier, A.~At-Bachir, V.~Strijov,
+  \href{https://arxiv.org/pdf/1703.10089.pdf}{{Position-based Content Attention
+  for Time Series Forecasting with Sequence-to-sequence RNNs}}.
+\newline\urlprefix\url{https://arxiv.org/pdf/1703.10089.pdf}
+
+\bibitem{QinAPrediction}
+Y.~Qin, D.~Song, H.~Chen, W.~Cheng, G.~Jiang, G.~W. Cottrell,
+  \href{http://cseweb.ucsd.edu/~yaq007/DA-RNN.pdf}{{A Dual-Stage
+  Attention-Based Recurrent Neural Network for Time Series Prediction}}.
+\newline\urlprefix\url{http://cseweb.ucsd.edu/~yaq007/DA-RNN.pdf}
+
+\bibitem{TensorFlow}
+\href{https://www.tensorflow.org/}{{TensorFlow}}.
+\newline\urlprefix\url{https://www.tensorflow.org/}
+
+\bibitem{SatyanarayananTheComputing}
+M.~Satyanarayanan, \href{http://elijah.cs.cmu.edu/DOCS/satya-edge2016.pdf}{{The
+  Emergence of Edge Computing}}.
+\newline\urlprefix\url{http://elijah.cs.cmu.edu/DOCS/satya-edge2016.pdf}
+
+\bibitem{Najafabadi2015DeepAnalytics}
+M.~M. Najafabadi, F.~Villanustre, T.~M. Khoshgoftaar, N.~Seliya, R.~Wald,
+  E.~Muharemagic,
+  \href{https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-014-0007-7?site=journalofbigdata.springeropen.com}{{Deep
+  learning applications and challenges in big data analytics}}, Journal of Big
+  Data 2.
+\newblock \href {http://dx.doi.org/10.1186/s40537-014-0007-7}
+  {\path{doi:10.1186/s40537-014-0007-7}}.
+\newline\urlprefix\url{https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-014-0007-7?site=journalofbigdata.springeropen.com}
+
+\bibitem{Wang2017}
+C.~Wang, Z.~Lu, Z.~Wu, J.~Wu, S.~Huang,
+  \href{http://ieeexplore.ieee.org/document/8034995/}{{Optimizing Multi-Cloud
+  CDN Deployment and Scheduling Strategies Using Big Data Analysis}}, in: 2017
+  IEEE International Conference on Services Computing (SCC), 2017, pp.
+  273--280.
+\newblock \href {http://dx.doi.org/10.1109/SCC.2017.42}
+  {\path{doi:10.1109/SCC.2017.42}}.
+\newline\urlprefix\url{http://ieeexplore.ieee.org/document/8034995/}
+
+\end{thebibliography}
