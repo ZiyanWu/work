@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  17 JAN 2018 09:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  17 JAN 2018 18:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -285,6 +285,9 @@ LaTeX Info: Redefining \] on input line 2818.
 )
 (./main.aux
 
+LaTeX Warning: Label `fig:RNN' multiply defined.
+
+
 LaTeX Warning: Label `my-label' multiply defined.
 
 )
@@ -354,51 +357,75 @@ LaTeX Info: Redefining \nameref on input line 16.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-
-
-Package natbib Warning: Citation `de' on page 1 undefined on input line 56.
-
-[1
+ [1
 
 
 {/media/ziyan/DATA/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
- (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+
+(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+
+
+LaTeX Warning: File `RNN.png' not found on input line 96.
+
+
+/home/ziyan/workspace/work/main.tex:96: Package pdftex.def Error: File `RNN.png
+' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...ludegraphics[width=0.5\textwidth]{RNN.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 [3]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
+/home/ziyan/workspace/work/main.tex:124: Undefined control sequence.
+l.124 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
+                                                  _t)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/ziyan/workspace/work/main.tex:132: Undefined control sequence.
+l.132 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
+                                                  _t)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+Missing character: There is no Œ in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Œ in font cmr10!
+Missing character: There is no ≤ in font cmr10!
 
 
-LaTeX Warning: File `RNN.png' not found on input line 119.
+LaTeX Warning: File `RNN.png' not found on input line 161.
 
 
-/home/ziyan/workspace/work/main.tex:119: Package pdftex.def Error: File `RNN.pn
+/home/ziyan/workspace/work/main.tex:161: Package pdftex.def Error: File `RNN.pn
 g' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 ...udegraphics[width=0.5\textwidth]{RNN.png}
+l.161 ...udegraphics[width=0.5\textwidth]{RNN.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -406,14 +433,23 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]
+[5]
+/home/ziyan/workspace/work/main.tex:179: Undefined control sequence.
+l.179 \subsub
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 147.
+               Default added (so using `tbp') on input line 185.
 
-[5]
-/home/ziyan/workspace/work/main.tex:168: Undefined control sequence.
-l.168 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
+[6]
+/home/ziyan/workspace/work/main.tex:206: Undefined control sequence.
+l.206 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
                                                   _t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -422,26 +458,26 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package natbib Warning: Citation `pascanu2013construct' on page 6 undefined on 
-input line 177.
+Package natbib Warning: Citation `pascanu2013construct' on page 7 undefined on 
+input line 215.
 
 
-Package natbib Warning: Citation `pascanu2012difficulty' on page 6 undefined on
- input line 183.
+Package natbib Warning: Citation `pascanu2012difficulty' on page 7 undefined on
+ input line 221.
 
-<pic/RNN_encoder-decoder.png, id=187, 379.4175pt x 332.24126pt>
+<pic/RNN_encoder-decoder.png, id=208, 379.4175pt x 332.24126pt>
 File: pic/RNN_encoder-decoder.png Graphic file (type png)
 <use pic/RNN_encoder-decoder.png>
-Package pdftex.def Info: pic/RNN_encoder-decoder.png  used on input line 189.
+Package pdftex.def Info: pic/RNN_encoder-decoder.png  used on input line 227.
 (pdftex.def)             Requested size: 172.5pt x 151.05339pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+[7]
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^u * \x 
                                                   _t) \\ & \mathbf g^f = \si...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -449,10 +485,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^f * \x 
                                                   _t) \\ & \mathbf g^o = \si...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -460,10 +496,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^o * \x 
                                                   _t) \\ & \mathbf g^c = \ta...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -471,10 +507,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^c * \x 
                                                   _t) \\ & \mathbf m_t = \ma...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -482,10 +518,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^u * \x 
                                                   _t) \\ & \mathbf g^f = \si...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -493,10 +529,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^f * \x 
                                                   _t) \\ & \mathbf g^o = \si...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -504,10 +540,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^o * \x 
                                                   _t) \\ & \mathbf g^c = \ta...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -515,10 +551,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:211: Undefined control sequence.
+/home/ziyan/workspace/work/main.tex:249: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I^c * \x 
                                                   _t) \\ & \mathbf m_t = \ma...
-l.211 	\end{split}
+l.249 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -526,54 +562,25 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[7 <./pic/RNN_encoder-decoder.png>]
-<pic/neural_network_architecture.png, id=218, 501.875pt x 388.45125pt>
+[8 <./pic/RNN_encoder-decoder.png>]
+<pic/neural_network_architecture.png, id=238, 501.875pt x 388.45125pt>
 File: pic/neural_network_architecture.png Graphic file (type png)
 <use pic/neural_network_architecture.png>
 Package pdftex.def Info: pic/neural_network_architecture.png  used on input lin
-e 228.
+e 266.
 (pdftex.def)             Requested size: 172.5pt x 133.51793pt.
- [8 <./pic/neural_network_architecture.png>]
-<pic/implementation.png, id=232, 1036.87375pt x 255.95625pt>
+ [9 <./pic/neural_network_architecture.png>]
+<pic/implementation.png, id=253, 1036.87375pt x 255.95625pt>
 File: pic/implementation.png Graphic file (type png)
 <use pic/implementation.png>
-Package pdftex.def Info: pic/implementation.png  used on input line 243.
+Package pdftex.def Info: pic/implementation.png  used on input line 281.
 (pdftex.def)             Requested size: 345.0pt x 85.16492pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 265.
+               Default added (so using `tbp') on input line 303.
 
-[9 <./pic/implementation.png>] [10] (./main.bbl
-Underfull \hbox (badness 6675) in paragraph at lines 23--29
-[]\OT1/cmr/m/n/10 M. L^^?angkvist, L. Karls-son, A. Loutfi, []A re-view of un-s
-u-per-
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 23--29
-\OT1/cmr/m/n/10 vised fea-ture learn-ing and deep learn-ing for time-series mod
--el-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--29
-\OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 https : / / ac . els-[]cdn . com / S016
-7865514000221 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--29
-\OT1/cmtt/m/n/10 1-[]s2 . 0-[]S0167865514000221-[]main . pdf ? _tid =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--29
-\OT1/cmtt/m/n/10 73b58696-[]de42-[]11e7-[]99f2-[]00000aab0f27 & acdnat = 151297
-6445 _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--44
+[10 <./pic/implementation.png>] [11] (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 27--36
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 http : / / www . ncbi . nlm . nih . gov
  / pubmed / 18267787http :
  []
@@ -582,59 +589,59 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 http : / / www1 . ece . neu . edu / []n
 ingfang / SimPaper / hotcloud _
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 https : / / www . sics . se / %7eamir /
  cloud14 / papers / 2012 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 \OT1/cmtt/m/n/10 20-[] % 20Discretized % 20Streams : %20An % 20Efficient % 20an
 d %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 \OT1/cmtt/m/n/10 20Fault-[]Tolerant % 20Model % 20for % 20Stream % 20Processing
  % 20on %
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 https : / / www . researchgate . net / 
 profile /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 \OT1/cmtt/m/n/10 Pankaj _ Malhotra3 / publication / 304782562 _ Long _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 \OT1/cmtt/m/n/10 Short _ Term _ Memory _ Networks _ for _ Anomaly _ Detection _
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 \OT1/cmtt/m/n/10 in _ Time _ Series / links / 5880506308ae71eb5dbfbd10 /
  []
 
 
-Overfull \hbox (42.80244pt too wide) in paragraph at lines 88--92
+Overfull \hbox (42.80244pt too wide) in paragraph at lines 80--84
 \OT1/cmtt/m/n/10 Long-[]Short-[]Term-[]Memory-[]Networks-[]for-[]Anomaly-[]Dete
 ction-[]in-[]Time-[]Series .
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 129--137
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 121--129
 \OT1/cmr/m/n/10 URL []$\OT1/cmtt/m/n/10 https : / / journalofbigdata . springer
 open . com / track / pdf / 10 .
  []
@@ -643,50 +650,73 @@ open . com / track / pdf / 10 .
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BD102AC10037F057750EE25A21EAD56;2053.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
+ (./main.aux
 
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B1A50D4EB7F52595E28C65EB9ABD2321;2200
+(rerunfilecheck)             After:  A13C5B51486B8E784FC205B773837229;2146.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 353.
  ) 
 Here is how much of TeX's memory you used:
- 6610 strings out of 492980
- 96260 string characters out of 6129239
- 187715 words of memory out of 5000000
- 10024 multiletter control sequences out of 15000+600000
+ 6619 strings out of 492980
+ 96325 string characters out of 6129239
+ 187718 words of memory out of 5000000
+ 10023 multiletter control sequences out of 15000+600000
  10663 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,15n,30p,882b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-</media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></media/ziyan/DATA/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss8.pfb></media/ziyan/DATA/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></media/ziyan/DATA/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></media/ziyan/DATA/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></media/ziyan/DATA/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></media/ziyan/D
-ATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></media/zi
-yan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></med
-ia/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-8.pfb>
-Output written on main.pdf (13 pages, 308411 bytes).
+ 32i,15n,30p,791b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.5.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.4.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.4.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.4.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+</media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmss8.pfb></media/ziyan/DATA/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></media/ziyan/DATA/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></media/ziyan/DATA/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></media/ziyan/DATA/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></media/ziyan/DAT
+A/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></media/ziya
+n/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></media
+/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
+/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.
+pfb>
+Output written on main.pdf (14 pages, 311851 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 

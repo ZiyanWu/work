@@ -1,0 +1,6 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "extensions.ignoreRecommendations": false,
+    "editor.minimap.maxColumn": 60,
+    "editor.wordWrapColumn": 40
+}

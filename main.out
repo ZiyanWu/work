@@ -1,31 +1,33 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Limitations of prior approaches}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{inaccuracy}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Problem and description}{subsection.2.1}% 5
-\BOOKMARK [2][-]{subsection.2.2}{CDN and edge computing}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{Model: performance evaluation as sequence learning}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.4}{deep learning in sequence prediction}{section.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.4.1}{RNN}{subsection.2.4}% 9
-\BOOKMARK [2][-]{subsection.2.5}{big data application stack}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.6}{comparison of exsisting approach}{section.2}% 11
-\BOOKMARK [3][-]{subsubsection.2.6.1}{Fundamental Limitations of Prior Approaches}{subsection.2.6}% 12
-\BOOKMARK [3][-]{subsubsection.2.6.2}{our approach}{subsection.2.6}% 13
-\BOOKMARK [1][-]{section.3}{Methods}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Spark Streaming}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Feature Engineering}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Model Design}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{}{section.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.4.1}{RNN}{subsection.3.4}% 19
-\BOOKMARK [3][-]{subsubsection.3.4.2}{RNN encoder-decoder}{subsection.3.4}% 20
-\BOOKMARK [3][-]{subsubsection.3.4.3}{LSTM}{subsection.3.4}% 21
-\BOOKMARK [2][-]{subsection.3.5}{lstm auto-encoder}{section.3}% 22
-\BOOKMARK [1][-]{section.4}{implementation}{}% 23
-\BOOKMARK [1][-]{section.5}{Evaluation}{}% 24
-\BOOKMARK [2][-]{subsection.5.1}{Experimental Settings}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.2}{Baseline}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.3}{Performance}{section.5}% 27
-\BOOKMARK [2][-]{subsection.5.4}{Deployed at ChinaNetCenter}{section.5}% 28
-\BOOKMARK [1][-]{section.6}{Discussion and Future Work}{}% 29
-\BOOKMARK [1][-]{section.7}{Related Work}{}% 30
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 31
+\BOOKMARK [2][-]{subsection.2.1}{CDN architecture}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{cache group}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Limitations of prior approaches}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{inaccuracy}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{unable to adapt to the change of the environment}{subsection.2.3}% 7
+\BOOKMARK [1][-]{section.3}{Problem formulation and Model}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{reach rate prediction}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Model: performance evaluation problem formulation}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{deep learning in sequence learning}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{RNN}{subsection.4.1}% 13
+\BOOKMARK [2][-]{subsection.4.2}{big data application stack}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{comparison of exsisting approach}{section.4}% 15
+\BOOKMARK [3][-]{subsubsection.4.3.1}{our approach}{subsection.4.3}% 16
+\BOOKMARK [1][-]{section.5}{Methods}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Feature Engineering}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Prediction Model Design}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.3.1}{RNN}{subsection.5.3}% 21
+\BOOKMARK [3][-]{subsubsection.5.3.2}{RNN encoder-decoder}{subsection.5.3}% 22
+\BOOKMARK [3][-]{subsubsection.5.3.3}{LSTM}{subsection.5.3}% 23
+\BOOKMARK [2][-]{subsection.5.4}{lstm auto-encoder}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{implementation}{}% 25
+\BOOKMARK [1][-]{section.7}{Evaluation}{}% 26
+\BOOKMARK [2][-]{subsection.7.1}{Experimental Settings}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.2}{Baseline}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.3}{Performance}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.4}{Deployed at ChinaNetCenter}{section.7}% 30
+\BOOKMARK [1][-]{section.8}{Discussion and Future Work}{}% 31
+\BOOKMARK [1][-]{section.9}{Related Work}{}% 32
+\BOOKMARK [1][-]{section.10}{Conclusion}{}% 33

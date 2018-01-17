@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1516152043 "main.aux" "main.bbl" "main" 1516153666
+["bibtex main"] 1516186329 "main.aux" "main.bbl" "main" 1516186547
   "./elsarticle-num.bst" 1516116049 29353 cbd593ca59c003368735a9d8dbd22298 ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1480098433 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1516152188 7113 45aed6e87f6f997f79b298fb87935b37 ""
-  "mendeley.bib" 1516116049 27676 6d59c4665c740dfea15b26193e6e677b ""
+  "main.aux" 1516186261 7457 a1a5e940f8f1d0e69f4544a6f73de086 ""
+  "mendeley.bib" 1516173790 29424 f46508c514f5be8f71c793157de82f73 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1516152187 "/home/ziyan/workspace/work/main.tex" "main.pdf" "main" 1516153666
-  "/home/ziyan/workspace/work/main.tex" 1516152187 16245 79c6fa5a3c17d417199b2e1b3b5cec19 ""
+  "main.bbl"
+["pdflatex"] 1516186547 "/home/ziyan/workspace/work/main.tex" "main.pdf" "main" 1516186547
+  "/home/ziyan/workspace/work/main.tex" 1516186546 18129 21733c915c4d56458a646233dc1432f8 ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1480098689 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -88,17 +88,17 @@
   "/media/ziyan/DATA/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1516122157 4134805 62feb18bf60cac063f254c0d13e5ae9f ""
   "/media/ziyan/DATA/texlive/2017/texmf.cnf" 1516122085 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "RNN.png" 0 -1 0 ""
-  "main.aux" 1516152188 7113 45aed6e87f6f997f79b298fb87935b37 ""
-  "main.bbl" 1516152043 7960 62fd31f37f03f535ca5190426697aa1c "bibtex main"
-  "main.out" 1516152188 2053 3bd102ac10037f057750ee25a21ead56 ""
-  "main.spl" 1516152187 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1516152187 16245 79c6fa5a3c17d417199b2e1b3b5cec19 ""
+  "main.aux" 1516186261 7457 a1a5e940f8f1d0e69f4544a6f73de086 ""
+  "main.bbl" 1516186329 7322 d5cb62067f71ad9db24d42468d4d3a0c "bibtex main"
+  "main.out" 1516186261 2200 b1a50d4eb7f52595e28c65eb9abd2321 ""
+  "main.spl" 1516186261 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1516186546 18129 21733c915c4d56458a646233dc1432f8 ""
   "pic/RNN_encoder-decoder.png" 1516116049 17477 33d16f7db1a38873178431d7fb761fa6 ""
   "pic/implementation.png" 1516116049 66633 5ec50feb066100762c6f0594ad613fe9 ""
   "pic/neural_network_architecture.png" 1516116049 29984 532a115cdc6571584e28a1803ee1aa34 ""
   (generated)
-  "main.pdf"
   "main.aux"
   "main.log"
   "main.out"
+  "main.pdf"
   "main.spl"
