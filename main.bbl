@@ -19,10 +19,6 @@ H.~Mao, R.~Netravali, M.~Alizadeh,
   {\path{doi:10.1145/3098822.3098843}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1145/3098822.3098843}
 
-\bibitem{Zhu2017DeepUber}
-L.~Zhu, N.~Laptev, {Deep and Confident Prediction for Time Series at Uber}\href
-  {http://dx.doi.org/10.1109/ICDMW.2017.19} {\path{doi:10.1109/ICDMW.2017.19}}.
-
 \bibitem{Bengio1994LearningDifficult}
 Y.~Bengio, P.~Simard, P.~Frasconi,
   \href{http://www.ncbi.nlm.nih.gov/pubmed/18267787
@@ -89,33 +85,6 @@ F.~A. Gers, D.~Eck, J.~Schmidhuber,
 \newblock \href {http://dx.doi.org/10.1007/3-540-44668-0{\_}93}
   {\path{doi:10.1007/3-540-44668-0{\_}93}}.
 \newline\urlprefix\url{http://link.springer.com/10.1007/3-540-44668-0_93}
-
-\bibitem{BahdanauNEURALTRANSLATE}
-D.~Bahdanau, K.~Cho, Y.~Bengio,
-  \href{https://arxiv.org/pdf/1409.0473.pdf}{{NEURAL MACHINE TRANSLATION BY
-  JOINTLY LEARNING TO ALIGN AND TRANSLATE}}.
-\newline\urlprefix\url{https://arxiv.org/pdf/1409.0473.pdf}
-
-\bibitem{CinarPosition-basedRNNs}
-Y.~Cinar, H.~Mirisaee, P.~Goswami, E.~Gaussier, A.~At-Bachir, V.~Strijov,
-  \href{https://arxiv.org/pdf/1703.10089.pdf}{{Position-based Content Attention
-  for Time Series Forecasting with Sequence-to-sequence RNNs}}.
-\newline\urlprefix\url{https://arxiv.org/pdf/1703.10089.pdf}
-
-\bibitem{QinAPrediction}
-Y.~Qin, D.~Song, H.~Chen, W.~Cheng, G.~Jiang, G.~W. Cottrell,
-  \href{http://cseweb.ucsd.edu/~yaq007/DA-RNN.pdf}{{A Dual-Stage
-  Attention-Based Recurrent Neural Network for Time Series Prediction}}.
-\newline\urlprefix\url{http://cseweb.ucsd.edu/~yaq007/DA-RNN.pdf}
-
-\bibitem{TensorFlow}
-\href{https://www.tensorflow.org/}{{TensorFlow}}.
-\newline\urlprefix\url{https://www.tensorflow.org/}
-
-\bibitem{SatyanarayananTheComputing}
-M.~Satyanarayanan, \href{http://elijah.cs.cmu.edu/DOCS/satya-edge2016.pdf}{{The
-  Emergence of Edge Computing}}.
-\newline\urlprefix\url{http://elijah.cs.cmu.edu/DOCS/satya-edge2016.pdf}
 
 \bibitem{Najafabadi2015DeepAnalytics}
 M.~M. Najafabadi, F.~Villanustre, T.~M. Khoshgoftaar, N.~Seliya, R.~Wald,
