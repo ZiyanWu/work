@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -38,18 +38,22 @@ K.~Cho, B.~Van~Merri{\"{e}}nboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares,
   Translation}}.
 \newline\urlprefix\url{http://www.statnlp.org/wp-content/uploads/2016/02/rnn.pdf}
 
-\bibitem{ZahariaSpark:Sets}
-M.~Zaharia, M.~Chowdhury, M.~J. Franklin, S.~Shenker, I.~Stoica,
-  \href{http://www1.ece.neu.edu/~ningfang/SimPaper/hotcloud_spark.pdf}{{Spark:
-  Cluster Computing with Working Sets}}.
-\newline\urlprefix\url{http://www1.ece.neu.edu/~ningfang/SimPaper/hotcloud_spark.pdf}
+\bibitem{Hochreiter1997LongMemory}
+S.~Hochreiter, J.~Schmidhuber, {Long Short-Term Memory}, Neural Computation
+  9~(8) (1997) 1735--1780.
+\newblock \href {http://dx.doi.org/10.1162/neco.1997.9.8.1735}
+  {\path{doi:10.1162/neco.1997.9.8.1735}}.
 
-\bibitem{ZahariaDiscretizedClusters}
-M.~Zaharia, T.~Das, H.~Li, S.~Shenker, I.~Stoica,
-  \href{https://www.sics.se/%7eamir/cloud14/papers/2012%20-%20Discretized%20Streams:%20An%20Efficient%20and%20Fault-Tolerant%20Model%20for%20Stream%20Processing%20on%20Large%20Clusters%20%28HotCloud%29.pdf}{{Discretized
-  Streams: An Efficient and Fault-Tolerant Model for Stream Processing on Large
-  Clusters}}.
-\newline\urlprefix\url{https://www.sics.se/%7eamir/cloud14/papers/2012%20-%20Discretized%20Streams:%20An%20Efficient%20and%20Fault-Tolerant%20Model%20for%20Stream%20Processing%20on%20Large%20Clusters%20%28HotCloud%29.pdf}
+\bibitem{MalhotraLongSeries}
+P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
+  \href{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}{{Long
+  Short Term Memory Networks for Anomaly Detection in Time Series}}.
+\newline\urlprefix\url{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}
+
+\bibitem{BuildingKeras}
+\href{https://blog.keras.io/building-autoencoders-in-keras.html}{{Building
+  Autoencoders in Keras}}.
+\newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
 
 \bibitem{Yeom2016Data-DrivenMatrices}
 J.-S. Yeom, J.~J. Thiagarajan, A.~Bhatele, G.~Bronevetsky, T.~Kolev,
@@ -61,49 +65,11 @@ J.-S. Yeom, J.~J. Thiagarajan, A.~Bhatele, G.~Bronevetsky, T.~Kolev,
   {\path{doi:10.1109/PMBS.2016.009}}.
 \newline\urlprefix\url{http://ieeexplore.ieee.org/document/7836412/}
 
-\bibitem{Hochreiter1997LongMemory}
-S.~Hochreiter, J.~Schmidhuber, {Long Short-Term Memory}, Neural Computation
-  9~(8) (1997) 1735--1780.
-\newblock \href {http://dx.doi.org/10.1162/neco.1997.9.8.1735}
-  {\path{doi:10.1162/neco.1997.9.8.1735}}.
-
-\bibitem{BuildingKeras}
-\href{https://blog.keras.io/building-autoencoders-in-keras.html}{{Building
-  Autoencoders in Keras}}.
-\newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
-
-\bibitem{MalhotraLongSeries}
-P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
-  \href{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}{{Long
-  Short Term Memory Networks for Anomaly Detection in Time Series}}.
-\newline\urlprefix\url{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}
-
-\bibitem{Gers2001ApplyingApproaches}
-F.~A. Gers, D.~Eck, J.~Schmidhuber,
-  \href{http://link.springer.com/10.1007/3-540-44668-0_93}{{Applying LSTM to
-  Time Series Predictable through Time-Window Approaches}}, 2001, pp. 669--676.
-\newblock \href {http://dx.doi.org/10.1007/3-540-44668-0{\_}93}
-  {\path{doi:10.1007/3-540-44668-0{\_}93}}.
-\newline\urlprefix\url{http://link.springer.com/10.1007/3-540-44668-0_93}
-
-\bibitem{Najafabadi2015DeepAnalytics}
-M.~M. Najafabadi, F.~Villanustre, T.~M. Khoshgoftaar, N.~Seliya, R.~Wald,
-  E.~Muharemagic,
-  \href{https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-014-0007-7?site=journalofbigdata.springeropen.com}{{Deep
-  learning applications and challenges in big data analytics}}, Journal of Big
-  Data 2.
-\newblock \href {http://dx.doi.org/10.1186/s40537-014-0007-7}
-  {\path{doi:10.1186/s40537-014-0007-7}}.
-\newline\urlprefix\url{https://journalofbigdata.springeropen.com/track/pdf/10.1186/s40537-014-0007-7?site=journalofbigdata.springeropen.com}
-
-\bibitem{Wang2017}
-C.~Wang, Z.~Lu, Z.~Wu, J.~Wu, S.~Huang,
-  \href{http://ieeexplore.ieee.org/document/8034995/}{{Optimizing Multi-Cloud
-  CDN Deployment and Scheduling Strategies Using Big Data Analysis}}, in: 2017
-  IEEE International Conference on Services Computing (SCC), 2017, pp.
-  273--280.
-\newblock \href {http://dx.doi.org/10.1109/SCC.2017.42}
-  {\path{doi:10.1109/SCC.2017.42}}.
-\newline\urlprefix\url{http://ieeexplore.ieee.org/document/8034995/}
+\bibitem{Rethinking_CDN}
+G.~Tang, K.~Wu, R.~Brunner, Rethinking cdn design with distributee time-varying
+  traffic demands, in: IEEE INFOCOM 2017 - IEEE Conference on Computer
+  Communications, 2017, pp. 1--9.
+\newblock \href {http://dx.doi.org/10.1109/INFOCOM.2017.8057028}
+  {\path{doi:10.1109/INFOCOM.2017.8057028}}.
 
 \end{thebibliography}
