@@ -4,6 +4,10 @@
 \usepackage{lineno,hyperref}
 \usepackage{amsmath}
 \usepackage{natbib}
+
+%https://www.cnblogs.com/coolqiyu/p/5580290.html
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithmicx,algorithm}
 \modulolinenumbers[5]
 
 \journal{DPDC}
@@ -81,23 +85,24 @@ auto-encoder and decoder. In Section IV, we demonstrate performance  improvement
 \section{Background}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{CDN.png}
-    \caption{The figure explains how the content delivery network works:1.2.3.4.5.6}
+    \includegraphics[width=0.5\textwidth]{CDN_new.png}
+    \caption{The architecture of CDN}
     \label{fig}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{cache_group.png}
-    \caption{The figure }
-    \label{fig:cache_server_group}
+    \caption{The figure}
+    \label{fig: the structure of PoP}
 \end{figure}
 
-A content delivery network or content distribution network (CDN) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multi-media content to the clients, based on the locations of the clients and cache servers nearby the clients. [CDNs serve a large portion of the Internet content today, including web objects (text, graphics and scripts), downloadable objects (media files, software, documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social networks.]
+A content delivery network or content distribution network (CDN) (figure 1) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multi-media content to the clients, based on the locations of the clients and cache servers nearby the clients. The basic working procedure is as follows. Step 1：client send a request to local dns. Step 2: the DNS finds the CNAME and redirects the request to the gslb (global sever load balance). Step 3: the local DNS server sends request to the glsb and glsb returns the ip address of CDN servers based on the scheduling policy. Step 4: the local DNS return the ip address to the clients. Step 5: fetch
 
-The architecture of CDN is in figure 2. An CDN cache group is the {minimal} resource scheduling unit for CDN. A CDN cache group is a load banlanced cluster that consists of interconnetcted cache servers. ][https://msdn.microsoft.com/en-us/library/ff648960.aspx] The tasks from clients are distributed requests across multiple servers. Load balancers use different algorithms algorithms to maximize the utilization of every server automatically. Round-robin algorithm distributes the load equally to each server. In heterogeneous cluster,  weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous cluster adds comlexity to the feature enginnring, as we will discuss later.
 
-As CDN provicers don't have direct QoS measurement from the clients (the logs from video players, web browser that can show the QoE), so they use the indirect measurement \dabiaolv which is collected from log of the HA proxy of CDN cache groups.
+A CDN cache server group is the basic resource scheduling unit for CDN. A CDN cache group is a load banlanced cluster that consists of interconnetcted cache servers. A typical implementation consists of HAPROXY and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server. In heterogeneous cluster,  weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous strucutre of a cluster adds comlexity to the feature enginnring, as we will discuss later.
+
+As CDN providers don't have direct QoS measurement from the clients (the logs from video players, web browser that can show the QoE), so they use the indirect measurement \dabiaolv which is collected from log of the HA proxy of CDN cache groups. 
 根据haproxy的日志计算标签数据，即达标率。
 达标率的计算公式为：响应速度=内核响应发送长度/响应完整发送时间；
 达标：响应速度>达标率配置速度阈值 则达标；
@@ -121,7 +126,7 @@ There are four catogories of sequence learning problem, which are many to one, m
 
 The training phase is to learn a best function that minimizes the prediction error as follows:
 \begin{equation}
-	\mathbf h_t = \tanh(\mathbf W * \mathbf h_{t-1} + \mathbf I * \x_t)
+	%\mathbf h_t = \tanh(\mathbf W * \mathbf h_{t-1} + \mathbf I * \x_t)
 \end{equation}
 
 Many models can be used to approximate f in sequence modeling. Conventional approaches use AR models. The AR method builds a model of the time series that is composed of a linear part and a random noise part. Whilst the linear part models the ascertainable chunk of the time series, the random noise reflects the unpredictable randomness in the time series. Furthermore, the linear part incorporates historical values of the time series, which also form the order of the AR model. One commonly refers to the notation AR(l) to indicate how much historical information is used to build the AR model. Equation shows the general autoregressive model for the univariate case. Here, y denotes the time series to be modelled, c denotes the constant parameter of the linear decomposition, β denotes the model to be computed and epsilon reflects the random noise part.
@@ -244,7 +249,33 @@ The metrics collected are in the granuality of caching servers which have differ
 The purpose of factors analysis is: (1) specifying the unit of analysis (2) data smurrazation data reduction (3) variable selection
 As there are hundreds of variables, there are many overlaps among the variables. We use correlation in statistis to group highly correlated variables together and create composite measure that can represent each group of variables.
 
-Correlation is an analysis of two or more observed or random variables (except in the special case of auto-correlation 2.2.1) to deter- mine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behaviour of the second variable. The Pearson’s correlation , for instance, defines this dependence in the interval [−1.0, 1.0]. Pearson’s correlation for two given random variables X and Y is computed by dividing the covariance of both variables with the product of their standard deviations.
+Correlation is an analysis of two or more observed or random variables (except in the special case of auto-correlation 2.2.1) to determine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behaviour of the second variable. The Pearson’s correlation , for instance, defines this dependence in the interval [−1.0, 1.0]. Pearson’s correlation for two given random variables X and Y is computed by dividing the covariance of both variables with the product of their standard deviations.
+
+After we caculate the correlation matrix for all the features. We use DBSCAN to cluster these features to elimiate duplicated ones.
+
+\begin{algorithm}[t]
+\caption{Feature Aggregation and Selection} %算法的名字
+\hspace*{0.02in} {\bf Input: list of all features listed in Table , correlation matrics} %算法的输入， \hspace*{0.02in}用来控制位置，同时利用 \\ 进行换行
+\hspace*{0.02in} {\bf Output: list of all selected features} %算法的结果输出
+output result
+\begin{algorithmic}[1]
+%\State some description % \State 后写一般语句
+\For{f in F} % For 语句，需要和EndFor对应
+　　%\State ...
+　　\If{f in Cluster or labeled as noise} % If 语句，需要和EndIf对应
+　　　　\State continue
+　　\Else
+　　　　\State examine the Eps neighbour of f
+        \if{|Eps(f)|<Minpts} then
+            label f as
+　　\EndIf
+\EndFor
+\While{condition} % While语句，需要和EndWhile对应
+　　\State ...
+\EndWhile
+\State \Return result
+\end{algorithmic}
+\end{algorithm}
 
 \begin{equation}
 	\mathbf cor_p=p_X_,_Y = \frac{cov(X,Y)}{XY}
@@ -263,47 +294,47 @@ Feature selection: The benefit of this feature selection process is two-fold: (a
     \label{fig:Correlation Matric}
 \end{figure}
 
-\begin{table*}[]
+\begin{table}[]
 \centering
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|}
 \hline  
-feature &   meaning\\
-cpu1.usage &   cpu used ratio of cpu1\\
-cpu2.usage &   cpu used ratio of cpu2\\
-... & \\
-mem\_cached & the size of memory cache\\
-mem\_buffers\_cache\_free & the size of memory cache buffer\\
-memory.swap  & the size of memory swap\\ 
-disk.used.sda1 & the size of disk used in sda1\\
-disk.used.sda2 & the size of disk used in sda2\\
-... & \\
-channeltraffic\_in   & \\
-channeltraffic\_in   & \\
-ioutil\_util\_sda & \\
-ioutil\_util\_sdb & \\
-ioutil\_util\_sdc & \\
-ioutil\_util\_sdd & \\
-... & \\
-iowait.wait & \\
-hitratio.port8101 & \\
-hitratio.port8102 & \\
-... & \\
+feature\\
+cpu1.usage\\
+cpu2.usage\\
+...  \\
+mem\_cached\\
+mem\_buffers\_cache\_free\\
+memory.swap\\ 
+disk.used.sda1\\
+disk.used.sda2\\
+...\\
+channeltraffic\_in\\
+channeltraffic\_in\\
+ioutil\_util\_sda\\
+ioutil\_util\_sdb\\
+ioutil\_util\_sdc\\
+ioutil\_util\_sdd\\
+...\\
+iowait.wait\\
+hitratio.port8101\\
+hitratio.port8102\\
+...\\
 \hline 
-aggregate.cpi & the cpu used ratio of all cpu\\
-aggregate.diskused & the disk used form all disk \\
-aggregated.ioutil & the overall ioutil \\
-aggregate.CPU.max & the max cpu used ratio from all cpu \\
-....  & \\
+aggregate.cpi\\
+aggregate.diskused\\
+aggregated.ioutil\\
+aggregate.CPU.max\\
+....\\
 \hline 
-aggregate.all\_machine.cpi & the cpu used ratio of the whole group\\
-aggregate.all\_machine.diskused & the disk used form all disk \\
-aggregated.all\_machine.ioutil & the overall ioutil \\
-aggregate.all\_machine.CPU.max & the max cpu used ratio from all cpu \\
+aggregate.all\_machine.cpi\\
+aggregate.all\_machine.diskused\\
+aggregated.all\_machine.ioutil\\
+aggregate.all\_machine.CPU.max\\
 \hline 
 \end{tabular}
-\caption{list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group is the feature we caculate based on the first group. The}
+\caption{list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole group of machines}
 \label{my-label}
-\end{table*}
+\end{table}
 
 
 
