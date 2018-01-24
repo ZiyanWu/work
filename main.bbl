@@ -55,11 +55,4 @@ P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
   Autoencoders in Keras}}.
 \newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
 
-\bibitem{Rethinking_CDN}
-G.~Tang, K.~Wu, R.~Brunner, Rethinking cdn design with distributee time-varying
-  traffic demands, in: IEEE INFOCOM 2017 - IEEE Conference on Computer
-  Communications, 2017, pp. 1--9.
-\newblock \href {http://dx.doi.org/10.1109/INFOCOM.2017.8057028}
-  {\path{doi:10.1109/INFOCOM.2017.8057028}}.
-
 \end{thebibliography}
