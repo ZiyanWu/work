@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1516797241 "main.aux" "main.bbl" "main" 1516797241
+["bibtex main"] 1516800111 "main.aux" "main.bbl" "main" 1516800111
   "./elsarticle-num.bst" 1516116049 29353 cbd593ca59c003368735a9d8dbd22298 ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1480098433 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1516797210 7033 8e4476523ff4f6519c63796e228178f8 ""
+  "main.aux" 1516800044 7212 4336dbc8d4789a9c96453e05da747521 ""
   "mendeley.bib" 1516510628 29425 b48f351b76c5b761c51dacf35b09d9ec ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1516797209 "/home/ziyan/workspace/work/main.tex" "main.pdf" "main" 1516797209
-  "/home/ziyan/workspace/work/main.tex" 1516797209 34339 509b0ac96d68d3ab73d59b5186d4298c ""
+  "main.blg"
+["pdflatex"] 1516800043 "/home/ziyan/workspace/work/main.tex" "main.pdf" "main" 1516800043
+  "/home/ziyan/workspace/work/main.tex" 1516800043 34168 7e1067ded66bafdf2a1b5038a307194c ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1480098689 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -102,11 +102,11 @@
   "/media/ziyan/DATA/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1516122114 2536349 8ed1facc84cc4802bc6ad4f5a74f74b8 ""
   "/media/ziyan/DATA/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1516122157 4134805 62feb18bf60cac063f254c0d13e5ae9f ""
   "/media/ziyan/DATA/texlive/2017/texmf.cnf" 1516122085 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "main.aux" 1516797197 7021 cb7a6f487f82ff8b5d111c24d9a64ed1 ""
-  "main.bbl" 1516797126 2971 04386b726fb0138293e5a1991debccbe "bibtex main"
-  "main.out" 1516797197 1372 4a7ad5552a1da194702c0738dd714fe6 ""
-  "main.spl" 1516797196 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1516797209 34339 509b0ac96d68d3ab73d59b5186d4298c ""
+  "main.aux" 1516799393 7033 f44457359c41a6b17635728bc2b1fb97 ""
+  "main.bbl" 1516799026 2971 04386b726fb0138293e5a1991debccbe "bibtex main"
+  "main.out" 1516799393 1372 4a7ad5552a1da194702c0738dd714fe6 ""
+  "main.spl" 1516799392 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1516800043 34168 7e1067ded66bafdf2a1b5038a307194c ""
   "pic/CDN_new.png" 1516678548 103142 31119cd47cc2c7e42a6e9106a76f7ef7 ""
   "pic/Correlation_Matrix.png" 1516720270 328133 7cecb5805b5e4492ece73c6f1bc9d99c ""
   "pic/RNN.png" 1516528173 75256 beca346c36a94e0a612fbe76c1278dff ""
@@ -117,7 +117,7 @@
   "pic/mlp.png" 1516694427 22754 57953156655c4b9e108d60d08204fd20 ""
   (generated)
   "main.pdf"
-  "main.aux"
-  "main.spl"
   "main.log"
+  "main.spl"
+  "main.aux"
   "main.out"

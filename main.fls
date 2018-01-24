@@ -163,6 +163,8 @@ INPUT /media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT pic/experiment_results.png
 INPUT ./pic/experiment_results.png
 INPUT ./pic/experiment_results.png
+INPUT pic/experiment_results.png
+INPUT ./pic/experiment_results.png
 INPUT main.bbl
 INPUT main.bbl
 INPUT /media/ziyan/DATA/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
