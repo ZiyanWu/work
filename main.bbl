@@ -55,16 +55,6 @@ P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
   Autoencoders in Keras}}.
 \newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
 
-\bibitem{Yeom2016Data-DrivenMatrices}
-J.-S. Yeom, J.~J. Thiagarajan, A.~Bhatele, G.~Bronevetsky, T.~Kolev,
-  \href{http://ieeexplore.ieee.org/document/7836412/}{{Data-Driven Performance
-  Modeling of Linear Solvers for Sparse Matrices}}, in: 2016 7th International
-  Workshop on Performance Modeling, Benchmarking and Simulation of High
-  Performance Computer Systems (PMBS), IEEE, 2016, pp. 32--42.
-\newblock \href {http://dx.doi.org/10.1109/PMBS.2016.009}
-  {\path{doi:10.1109/PMBS.2016.009}}.
-\newline\urlprefix\url{http://ieeexplore.ieee.org/document/7836412/}
-
 \bibitem{Rethinking_CDN}
 G.~Tang, K.~Wu, R.~Brunner, Rethinking cdn design with distributee time-varying
   traffic demands, in: IEEE INFOCOM 2017 - IEEE Conference on Computer
