@@ -35,8 +35,8 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The figure}}{2}{figure.2}}
 \newlabel{fig: the structure of PoP}{{2}{2}{The figure}{figure.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Problem Formulation and Model}{2}{section.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole group of machines}}{3}{table.1}}
-\newlabel{my-label}{{1}{3}{list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole group of machines}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}}{3}{table.1}}
+\newlabel{my-label}{{1}{3}{list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}{table.1}{}}
 \@LN@col{2}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}linear models for sequence learning}{3}{subsection.3.1}}
 \citation{Bengio1994LearningDifficult}
@@ -48,7 +48,6 @@
 \newlabel{fig:RNN}{{3}{4}{MLP structure}{figure.3}{}}
 \@LN@col{2}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}RNN}{4}{subsubsection.3.2.2}}
-\citation{pascanu2013construct}
 \citation{pascanu2012difficulty}
 \citation{Hochreiter1997LongMemory}
 \citation{MalhotraLongSeries}
@@ -58,25 +57,23 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The left shows the backloop structure of RNN and right shows that RNN can be thought as infinite deep layers neural network unfolded along the dimension of time}}{5}{figure.4}}
 \newlabel{fig:RNN can be thought as infinite deep layers neural network along the dimensions of time}{{4}{5}{The left shows the backloop structure of RNN and right shows that RNN can be thought as infinite deep layers neural network unfolded along the dimension of time}{figure.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}LSTM}{5}{subsubsection.3.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}LSTM auto-encoder}{5}{subsubsection.3.2.4}}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces RNN auto-encoder}}{5}{figure.5}}
-\newlabel{fig:RNN_encoder-decoder}{{5}{5}{RNN auto-encoder}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.5}attention-based LSTM auto-encoder}{5}{subsubsection.3.2.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}LSTM auto-encoder}{5}{subsubsection.3.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces LSTM Auto-encoder Model}}{5}{figure.5}}
+\newlabel{fig:RNN_encoder-decoder}{{5}{5}{LSTM Auto-encoder Model}{figure.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Methods}{5}{section.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Feature Engineering}{5}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Factors analysis}{5}{subsubsection.4.1.1}}
 \@LN@col{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces attention based lstm auto-encoder}}{6}{figure.6}}
-\newlabel{fig:neural_network_architecture}{{6}{6}{attention based lstm auto-encoder}{figure.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Factors analysis}{6}{subsubsection.4.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Correlation Matrix of the feature set}}{6}{figure.6}}
+\newlabel{fig:Correlation_matrix}{{6}{6}{Correlation Matrix of the feature set}{figure.6}{}}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Correlation Matrix of the feature set}}{6}{figure.7}}
-\newlabel{fig:Correlation_matrix}{{7}{6}{Correlation Matrix of the feature set}{figure.7}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Feature Aggregation and Selection}}{6}{algorithm.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Prediction Model Design}{6}{subsection.4.2}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation}{6}{section.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Experimental Settings and Dataset}{6}{subsection.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Results}}{7}{figure.8}}
-\newlabel{fig:Prediction Results}{{8}{7}{Prediction Results}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces lstm auto-encoder with a deep feadfoward network}}{7}{figure.7}}
+\newlabel{fig:our_models}{{7}{7}{lstm auto-encoder with a deep feadfoward network}{figure.7}{}}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Baseline}{7}{subsection.5.2}}
 \@LN@col{2}
@@ -84,8 +81,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {6}Discussion and Future Work}{7}{section.6}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces My caption}}{8}{table.2}}
 \newlabel{my-label}{{2}{8}{My caption}{table.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Prediction Results}}{8}{figure.9}}
-\newlabel{fig:Prediction Results}{{9}{8}{Prediction Results}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Prediction Results}}{8}{figure.8}}
+\newlabel{fig:Prediction Results}{{8}{8}{Prediction Results}{figure.8}{}}
 \@LN@col{1}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Related Work}{8}{section.7}}
 \@LN@col{2}
@@ -100,6 +97,5 @@
 \bibcite{BuildingKeras}{{7}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \@LN@col{1}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Feature Aggregation and Selection}}{9}{algorithm.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{9}{section.8}}
 \@LN@col{2}
