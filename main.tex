@@ -63,29 +63,28 @@ In industry, Contnet Delivery Network(CDN) Service providers are increasingly us
 \linenumbers
 \section{Introduction}
 % the detail of absract
-There is a trend \cite{Jiang2017Pytheas:Exploration-Exploitation} \cite{Mao2017NeuralPensieve} that using data-driven methods to model complex networked systems. Traditional approach typically use simple huristics. These methods have several drawbacks.They cannot accurately reflect and oversimplified the complex systems due to the lack of knowledge of real-word environment. Driven by the opportunity to collect and analyze data (e.g., application quality measurement from end users), many recent proposals have demonstrated the promise of using deep learning to characterize and optimize networked systems. Drawing parralel from the success of deep-learning on pattern recognizaition, instead of using empirical non-linear learning model to descirbe the complex interaction of different features, we use deep learning methods and treat networked systems as a black-box.
+There is a trend \cite{Jiang2017Pytheas:Exploration-Exploitation} \cite{Mao2017NeuralPensieve} that using data-driven methods to model complex networked systems. Traditional approach typically use simple huristics. These methods have several drawbacks.They cannot accurately reflect and oversimplified the complex systems due to the lack of knowledge of real-word environment. Driven by the opportunity to collect and analyze data (e.g., application quality measurement from end users), many recent proposals have demonstrated the promise of using deep learning to characterize and optimize networked systems. Drawing parrallel from the success of deep-learning on pattern recognizaition, instead of using empirical non-linear learning model to descirbe the complex interaction of different features, we use deep learning methods and treat networked systems as a black-box.
 
-A content delivery network (CDN) is a globally distributed network system deployed across the Internet. Composed with geographically distributed cache servers, CDNs deliver cached content  to  customers  worldwide  based  on their geographic locations. Extensively  using  cache  servers,  content  delivery over  CDN  has  low  latency  and  high  reliability,  and  supports better quality of experience.
+A content delivery network (CDN) is a globally distributed network system deployed across the Internet. Composed with geographically distributed cache servers, CDNs deliver cached content  to  customers  worldwide  based  on their geographic locations. Extensively  using  cache  servers,  content  delivery over  CDN  has  low  latency, reliability, supports better quality of experience and security.
 
 The CDN Service providers are increasingly using data-driven mechanisms to build their performance model of their service-providing systems. To build a model to accurately provice an understanding of the performance of the existing infrastructure such as the health of cache groups and network status, is very crucial to make resource management decisions including content placement, network traffic scheduling, load banlance of the CDN network. Modeling all available physical resources, we can maximize a resource utilization in terms of service quality, cost, profit, etc.
 
 Generally CDN provicers don't have direct measurement from the clients (the logs from video players, web browser that can show the QoE of clients). Instead, they use the indirect measurement \dabiaolv defined in Section II which is collected and analyzed from the log of the HA proxy of CDN cache groups, which is . The computation of \dabiaolv is done offline . In order to enable themselves make resource manangement decisions in real time, the CDN providers have to use the metrics that can be collected in the real time to infer the \dabiaolv. 
 
-Cache server group can be characterised as multi-dimensional, highly non-linear, time variant vectors. The metrics that collected from members of the CDN cache server groups are sequence data that are measured every minute, which have hundreds of dimensions. The state-of-art methods are typically using simple huristics, which are over-simplifed and baised due to the human experience. 
+Cache server group can be characterised as multi-dimensional, highly non-linear, time variant vectors. The metrics that collected from members of the CDN cache server groups are sequence data that are measured every minute, which have hundreds of dimensions. The state-of-art methods are typically using simple huristics  which are over-simplifed and baised due to the human experience, or linear models, which cannot characterize the complex relationship between multiple metrics. Deep learning is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequnce modeling. Compared to other machine learning techniques, a lot of work show that it can detect complex relationships among features, can extract hierarchical level of features from high-dimensional data, including monitoring data.
 
 %Resouoce management involves 
-We frame our problem as a sequence learning problem, which consists of stages: (1) feature engineering (2) representaion learning by lstm auto-encoder (3) fully connected network/ svm/ other black-box machine learning algorithm to output the predictions. 
+We frame our problem as a sequence learning problem, which consists of stages: (1) feature engineering (2) representaion learning by lstm auto-encoder to extract useful (3) fully connected network/ svm/ other black-box machine learning algorithm to output the predictions. 
 %\deep-
-lstm,lstm auto encoder and decoder
 
 Our main contributions are listed below:
 \begin{itemize}
-  \item data-driven approach
-  \item performance modeling as sequence modeling problem
-  \item anomaly detection(Collective Anomalies a) and prediction
+  \item We frame our problem as a sequence learning problem
+  \item We representaion learning by lstm auto-encoder to extract useful
+  \item We compare out methods with state-of-arts methods
 \end{itemize}
 
-The remain organization of this paper is as follows. In Section II, we first  introduce the formulation of performance evaluation problem and  then introduce  our LSTM  based  structure. In Section III, we introduce reach-rate prediction algorithms based on the auto-encoder and decoder. In Section IV, we demonstrate performance  improvements over baseline models. Finally, we provide concluding remarks in Section V.
+The remain organization of this paper is as follows. In Section 2, we first introduce the related concept as our research background. In Section 3, we formulate our performance evaluation problem as a sequence learning problem and then our LSTM-based methods. In Section 4, we introduce our method of feature engineering to reduce the dimensionality for the high-dimensional data and  our \dabiaolv prediction model based on lstm auto-encoder. In Section 5, we show our experiment setting and demonstrate performance improvements of our methods over baseline models. Section 6 is discussion and future work. We provide concluding remarks in Section 7.
 %\cite
 
 \section{Background}
@@ -106,7 +105,7 @@ The remain organization of this paper is as follows. In Section II, we first  in
 A content delivery network or content distribution network (CDN) (figure 1) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multi-media content to the clients, based on the locations of the clients and cache servers nearby the clients. The basic working procedure is as follows. Step 1：client send a request to local dns. Step 2: the DNS finds the CNAME and redirects the request to the gslb (global sever load balance). Step 3: the local DNS server sends request to the glsb and glsb returns the ip address of CDN servers based on the scheduling policy. Step 4: the local DNS return the ip address to the clients. Step 5: fetch 
 
 
-A CDN cache server group is the basic resource scheduling unit for CDN. A CDN cache group is a load banlanced cluster that consists of interconnetcted cache servers. A typical implementation consists of HAPROXY and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server. In heterogeneous cluster,  weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous strucutre of a cluster adds comlexity to the feature enginnring, as we will discuss later. 
+A CDN cache server group is the basic resource scheduling unit for CDN. A CDN cache group is a load banlanced cluster that consists of interconnetcted cache servers. A typical implementation consists of HAPROXY and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server. In heterogeneous cluster,  weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous strucutre of a cluster adds comlexity to the feature engineering.
 
 As CDN providers don't have direct QoS measurement from the clients (the logs from video players, web browser that can show the QoE), so they use the indirect measurement \dabiaolv which is calculated from log of the HA proxy of CDN cache groups with a delay about three minutes. 
 
@@ -157,14 +156,14 @@ aggregated.all\_machine.ioutil\\
 aggregate.all\_machine.CPU.max\\
 \hline
 \end{tabular}
-\caption{list of candidate input features from one cache server，We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single machine. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}
+\caption{list of candidate input features from one cache server. We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single cache server. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}
 \label{my-label}
 \end{table}
 
 \section{Problem Formulation and Model}
 We argue that performance evlaluation as a sequence learning problem. Since we are able to collect the caching servers performance metrics and network metrics at a certain time interval, we can use a sequence models to describe relationship between metrics collected from  cache groups and \dabiaolv
 
-There are four catogories of sequence learning problem, which are many to one, many to one and many one. Our goal is to model the relationship between collected metrics and \dabiaolv, which is many to one. In general, we can use the following formulation to describe the prediction process.
+There are three catogories of sequence learning problem, which are many to one, many to one and many one. Our goal is to model the relationship between a sequence collected metrics and \dabiaolv within a certain period of time, which is many to one. In general, we can use the following formulation to describe the prediction process.
 
 Giving a sequnce of vectors, $\{x_n\}=\{x_{\alpha} \in R^{d}|\alpha \in N\}, $ , where $d$ is the number of the features, we use $\{x_n\}$ to represent the sequence and $x_t$ to describe a data point at time t with $d$ dimensions.
 
@@ -186,7 +185,7 @@ Linear models are easy to implement and have good interpretation and thus are wi
 
 Deep learning (DL) is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network (ANN) architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequnce modeling. Compared to other machine learning techniques, it can detect complex relationships among features,can extract hierarchical level of features from raw data. So it can produce more accurate result and build a model more accurate with less time. They are advantageous for modeling intricate systems because neural networks do not require the user to predefine the feature interactions in the model, which assumes relationships within the data. Instead, the neural network searches for patterns and interactions between features to automatically generate a best fit model.
 
-One of the more popular DL deep neural networks is the Recurrent Neural Network (RNN). RNNs are a class of neural networks that depend on the sequential nature of their input. Such inputs could be text, speech, time series, and anything else in which the occurrence of an element in the sequence is dependent on the elements that appeared before it.
+One of the more popular kind of deep neural networks is the Recurrent Neural Network (RNN). RNNs are a class of neural networks that depend on the sequential nature of their input. Such inputs could be text, speech, time series, and anything else in which the occurrence of an element in the sequence is dependent on the elements that appeared before it.
 
 \subsection{non-linear for sequence learning}
 Sequence prediction often involves forecasting the next value in a real valued sequence or outputting a class label for an input sequence.
@@ -285,9 +284,7 @@ here $\sigma$ is the logistic sigmoid function, $\mathbf W_u, \mathbf W_f, \math
     \label{fig:RNN_encoder-decoder}
 \end{figure}
 
-An autoencoder contains: an encoding function, a decoding function, and a distance function between the amount of information loss between the compressed representation of your data and the decompressed representation (i.e. a "loss" function). The encoder and decoder will be chosen to be parametric functions (typically neural networks), and to be differentiable with respect to the distance function, so the parameters of the encoding/decoding functions can be optimize to minimize the reconstruction loss, using Stochastic Gradient Descent. 
-
-Autoencoders are data-specific. Autoencoders are lossy. Autoencoders are learned automatically from data examples, which is a useful property: it means that it is easy to train specialized instances of the algorithm that will perform well on a specific type of input. It doesn't require any new engineering, just appropriate training data. \cite{BuildingKeras}
+An autoencoder contains: an encoding function, a decoding function, and a distance function between the amount of information loss between the compressed representation of your data and the decompressed representation (i.e. a "loss" function). The encoder and decoder will be chosen to be deep layered lstm network. So the parameters of the encoding/decoding functions can be optimize to minimize the reconstruction loss, using Stochastic Gradient Descent.  
 
 
 \section{Methods}
@@ -295,7 +292,7 @@ Autoencoders are data-specific. Autoencoders are lossy. Autoencoders are learned
 The feature enginnering is the process after data-clearning, in which we fill the missing data and reformating it. The propose of this stage is two-fold:
 
 (1) to find a unified equal-length vector representation of all of the cache groups. 
-The metrics collected are in the granuality of caching servers which have differnet dimensionality. As showed in graph. To make things more complex, a cache group may have dfferint number caching servers. As we only care about
+The metrics collected are in the granuality of caching servers which have differnet dimensionality. As showed in graph. To make things more complex, a cache group may have dfferint number caching servers. As we only care about. 
 (2) reduce the dimensionality, for it is very time-consuming to train the models when the number of dimensionality is too high.
 
 \subsubsection{Factors analysis}
@@ -414,7 +411,7 @@ We use three different evaluation metrics to compare our models and methods. Amo
 
 \begin{table*}[]
 \centering
-\caption{My caption}
+\caption{Performance Comparison}
 \label{my-label}
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -424,7 +421,7 @@ multiple linear regressionmodel & 10.0 & 9.9  & 8.8 \\
 \hline
 feed-foward neural network with sliding windows & 10.0 & 9.9  & 8.8 \\
 \hline
-RNN & 10.0 & 9.9  & 8.8 \\
+RNN & 0.21 & 0.12  & 0.141 \\
 \hline
 LSTM encoder-decoder with feed-foward neural network& 10.0 & 9.9  & 8.8 \\
 \hline  
@@ -433,10 +430,12 @@ LSTM encoder-decoder with feed-foward neural network& 10.0 & 9.9  & 8.8 \\
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{experiment_results.png}
+    \includegraphics[width=0.8\textwidth]{result.png}
     \caption{Prediction Results}
     \label{fig:Prediction Results}
 \end{figure*}
+
+error over diffenrent models
 
 \subsection{Performance}
 We Tuning hypermeters

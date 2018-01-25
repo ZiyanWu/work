@@ -158,9 +158,9 @@ INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT pic/our_models.png
 INPUT ./pic/our_models.png
 INPUT ./pic/our_models.png
-INPUT pic/experiment_results.png
-INPUT ./pic/experiment_results.png
-INPUT ./pic/experiment_results.png
+INPUT pic/result.png
+INPUT ./pic/result.png
+INPUT ./pic/result.png
 INPUT main.bbl
 INPUT main.bbl
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm

@@ -50,9 +50,4 @@ P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
   Short Term Memory Networks for Anomaly Detection in Time Series}}.
 \newline\urlprefix\url{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}
 
-\bibitem{BuildingKeras}
-\href{https://blog.keras.io/building-autoencoders-in-keras.html}{{Building
-  Autoencoders in Keras}}.
-\newline\urlprefix\url{https://blog.keras.io/building-autoencoders-in-keras.html}
-
 \end{thebibliography}
