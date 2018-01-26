@@ -74,14 +74,14 @@ Generally CDN provicers don't have direct measurement from the clients (the logs
 Cache server group can be characterised as multi-dimensional, highly non-linear, time variant vectors. The metrics that collected from members of the CDN cache server groups are sequence data that are measured every minute, which have hundreds of dimensions. The state-of-art methods are typically using simple huristics  which are over-simplifed and baised due to the human experience, or linear models, which cannot characterize the complex relationship between multiple metrics. Deep learning is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequnce modeling. Compared to other machine learning techniques, a lot of work show that it can detect complex relationships among features, can extract hierarchical level of features from high-dimensional data, including monitoring data.
 
 %Resouoce management involves 
-We frame our problem as a sequence learning problem, which consists of stages: (1) feature engineering (2) representaion learning by lstm auto-encoder to extract useful (3) fully connected network/ svm/ other black-box machine learning algorithm to output the predictions. 
+We frame our problem as a sequence learning problem, which consists of stages: (1) feature engineering (2) representaion learning by lstm auto-encoder to extract useful (3) fully connected network black-box machine learning algorithm to output the predictions. 
 %\deep-
 
 Our main contributions are listed below:
 \begin{itemize}
-  \item We frame our problem as a sequence learning problem
-  \item We representaion learning by lstm auto-encoder to extract useful
-  \item We compare out methods with state-of-arts methods
+  \item We frame performance evaluation problem as a sequence learning problem.
+  \item We use representaion learning by lstm auto-encoder to extract useful features from data.
+  \item We compare our methods with state-of-arts methods and show outs is superior by empirical studies.
 \end{itemize}
 
 The remain organization of this paper is as follows. In Section 2, we first introduce the related concept as our research background. In Section 3, we formulate our performance evaluation problem as a sequence learning problem and then our LSTM-based methods. In Section 4, we introduce our method of feature engineering to reduce the dimensionality for the high-dimensional data and  our \dabiaolv prediction model based on lstm auto-encoder. In Section 5, we show our experiment setting and demonstrate performance improvements of our methods over baseline models. Section 6 is discussion and future work. We provide concluding remarks in Section 7.
@@ -290,23 +290,26 @@ An autoencoder contains: an encoding function, a decoding function, and a distan
 \section{Methods}
 \subsection{Feature Engineering}
 The feature enginnering is the process after data-clearning, in which we fill the missing data and reformating it. The propose of this stage is two-fold:
-
 (1) to find a unified equal-length vector representation of all of the cache groups. 
 The metrics collected are in the granuality of caching servers which have differnet dimensionality. As showed in graph. To make things more complex, a cache group may have dfferint number caching servers. As we only care about. 
 (2) reduce the dimensionality, for it is very time-consuming to train the models when the number of dimensionality is too high.
 
-\subsubsection{Factors analysis}
-The purpose of factors analysis is: (1) specifying the unit of analysis (2) data summarization and data reduction
+Our feature engineering has three steps:1. data prepossessing which converts raw data into high-demensional vectors. 2. feature correlation that characterize the linear relationship between every pair of features. 3. cluster analysis that selects the set of features.
 
-As there are hundreds of features, there are many overlaps among the variables. We use correlation in statistis to group highly correlated variables together and create composite measure that can represent each group of variables.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{feature_engineering.png}
+    \caption{three steps of feature enginnering}
+    \label{fig:Correlation_matrix}
+\end{figure}
 
-Correlation is an analysis of two or more observed or random variables to determine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behaviour of the second variable. The Pearson’s correlation, for instance, defines this dependence in the interval [−1.0, 1.0]. Pearson’s correlation for two given random variables X and Y is computed by dividing the covariance of both variables with the product of their standard deviations.
+As there are hundreds of features, there are many overlaps among the variables. We use correlation in statistis to group highly correlated variables together and create composite features that can represent each group of variables.
 
-Generally, cases of high correlation compute to a value close to 1.0, high anticorrelation is associated with a value close to -1.0 and no correlation is assumed, if the value is around 0.0. In the last case, the variables appear to be independent. Statistical correlation is used in various domains to identify and better understand relationships of variables.
+Correlation is an analysis of two or more observed or random variables to determine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behaviour of the second variable. The Pearson’s correlation defines this dependence in the interval [−1.0, 1.0]. Pearson’s correlation for two given random variables X and Y is computed by dividing the covariance of both variables with the product of their standard deviations.
 
-Some Deep Learning algorithms can become prohibitively computationally-expensive when dealing with high-dimensional data.
+Generally, cases of high correlation compute to a value close to 1.0, high anticorrelation is associated with a value close to -1.0 and no correlation is assumed. if the value is around 0.0, the variables appear to be independent. 
 
-The correlation matrix we calculatre is pictured in figure \ref{fig:Correlation_matrix}. The white color denotes the correlation of 1.0 and the black denotes -1.0. The red denotes that there is no linear relationship at all. As we can see from the picture that there are overlaps among the features. 
+The correlation matrix we calculatre is pictured in figure \ref{fig:Correlation_matrix}. The white color denotes the correlation of 1.0 and the black denotes -1.0. The red denotes that there is no linear relationship at all. As we can see from the picture that there are overlaps among the features.
 
 \begin{figure}[h]
     \centering
