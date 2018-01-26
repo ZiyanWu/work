@@ -1,18 +1,18 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  26 JAN 2018 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.22)  26 JAN 2018 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/ziyan/workspace/work/main.tex
-(/home/ziyan/workspace/work/main.tex
+**c:/Users/ziyan/workspace/work/main.tex
+(c:/Users/ziyan/workspace/work/main.tex
 LaTeX2e <2017-04-15>
 Babel <3.16> and hyphenation patterns for 84 language(s) loaded.
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+(d:/texlive-windows/2017/texmf-dist/tex/latex/elsarticle/elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.2.0: Elsevier Ltd
 \@bls=\dimen102
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/article.cls
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -27,38 +27,40 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(d:/texlive-windows/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
-) (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/psnfss/pifont.sty
+)
+(d:/texlive-windows/2017/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/psnfss/upzd.fd
+(d:/texlive-windows/2017/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/psnfss/upsy.fd
+(d:/texlive-windows/2017/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count87
@@ -78,9 +80,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@enLab=\toks16
 \@sep=\skip43
 \@@sep=\skip44
-
-(./main.spl)
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+ (./main.spl)
+(d:/texlive-windows/2017/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -91,17 +92,17 @@ LaTeX Info: Redefining \cite on input line 694.
 \openout3 = `main.spl'.
 
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count94
@@ -117,7 +118,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen116
 \Gm@dimlist=\toks17
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/fleqn.clo
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2016/12/29 v1.2a Standard LaTeX option (flush left equations)
 \mathindent=\dimen117
 Applying: [2015/01/01] Make \[ robust on input line 50.
@@ -127,7 +128,7 @@ Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
 ))
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count97
 \output=\toks18
@@ -145,16 +146,14 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box30
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref
-.sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.
-sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -192,21 +191,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+)
+(d:/texlive-windows/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(d:/texlive-windows/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen123
 \Hy@linkcounter=\count104
 \Hy@pagecounter=\count105
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+(d:/texlive-windows/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count106
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(d:/texlive-windows/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -218,7 +219,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count107
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/url/url.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -243,36 +244,36 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+(d:/texlive-windows/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count112
 \c@bookmark@seq@number=\count113
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.st
-y
+(d:/texlive-windows/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip47
-) (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(d:/texlive-windows/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen127
 ))
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen128
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count114
@@ -313,14 +314,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode
-.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
- (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.
-sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -336,10 +336,11 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip53
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+) (d:/texlive-windows/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/float/float.sty
+
+(d:/texlive-windows/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count133
 \float@exts=\toks24
@@ -349,13 +350,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks26
 \c@algorithm=\count134
-)
-(./main.aux
+) (./main.aux
 
 LaTeX Warning: Label `fig:Correlation_matrix' multiply defined.
 
 
 LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `fig:Prediction Results' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -374,8 +377,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (d:/texlive-windows/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count135
 \scratchdimen=\dimen136
@@ -388,10 +390,10 @@ LaTeX Font Info:    ... okay on input line 26.
 \MPnumerator=\count139
 \makeMPintoPDFobject=\count140
 \everyMPtoPDFconversion=\toks28
-)
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (d:/texlive-windows/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+
+(d:/texlive-windows/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -401,8 +403,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.c
-fg
+(d:/texlive-windows/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -444,11 +445,10 @@ e
 
 \AtBeginShipoutBox=\box36
 Package hyperref Info: Link coloring OFF on input line 26.
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+(d:/texlive-windows/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.
-sty
+(d:/texlive-windows/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count141
@@ -456,25 +456,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- (./main.out) (./main.out)
+
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 
-Overfull \hbox (5.46336pt too wide) in paragraph at lines 68--69
-\OT1/cmr/m/n/10 tributed net-work sys-tem de-ployed across the In-ter-net. Com-
-
- []
-
-
-Overfull \hbox (0.93562pt too wide) in paragraph at lines 68--69
-\OT1/cmr/m/n/10 their ge-o-graphic lo-ca-tions. Ex-ten-sively us-ing cache serv
-ers,
- []
-
-
-Overfull \hbox (3.379pt too wide) in paragraph at lines 70--71
-\OT1/cmr/m/n/10 traf-fic schedul-ing, load ban-lance of the CDN net-work. Mod-
+Overfull \hbox (1.22255pt too wide) in paragraph at lines 68--69
+\OT1/cmr/m/n/10 CDNs de-liver cached con-tent to cus-tomers world-wide based
  []
 
 
@@ -483,17 +472,18 @@ Overfull \hbox (27.80595pt too wide) in paragraph at lines 74--75
 l,
  []
 
-[1{/media/ziyan/DATA/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{d:/texlive-windows/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
- (/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
-<pic/CDN_new.png, id=102, 1061.9675pt x 696.6025pt>
+<pic/CDN_new.png, id=109, 1061.9675pt x 696.6025pt>
 File: pic/CDN_new.png Graphic file (type png)
 <use pic/CDN_new.png>
 Package pdftex.def Info: pic/CDN_new.png  used on input line 93.
@@ -506,7 +496,7 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 93--94
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pic/cache_group.png, id=104, 1010.77625pt x 714.67pt>
+<pic/cache_group.png, id=111, 1010.77625pt x 714.67pt>
 File: pic/cache_group.png Graphic file (type png)
 <use pic/cache_group.png>
 Package pdftex.def Info: pic/cache_group.png  used on input line 100.
@@ -523,12 +513,12 @@ Missing character: There is no ï in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no š in font cmr10!
 
-Overfull \hbox (0.49803pt too wide) in paragraph at lines 108--109
+Overfull \hbox (0.49803pt too wide) in paragraph at lines 107--108
 []\OT1/cmr/m/n/10 A CDN cache server group is the ba-sic re-source schedul-
  []
 
 
-Overfull \hbox (12.04669pt too wide) in paragraph at lines 108--109
+Overfull \hbox (12.04669pt too wide) in paragraph at lines 107--108
 \OT1/cmr/m/n/10 servers. The re-quests from clients are dis-tributed by HAproxy
 
  []
@@ -538,17 +528,17 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.113 
+l.110 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.113 
+l.110 
        <./pic/CDN_new.png> <./pic/cache_group.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 114.
+               Default added (so using `tbp') on input line 113.
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
@@ -556,7 +546,7 @@ Missing character: There is no — in font cmr10!
 Missing character: There is no Î in font cmr10!
 Missing character: There is no ² in font cmr10!
 
-Overfull \hbox (0.36156pt too wide) in paragraph at lines 181--182
+Overfull \hbox (0.36156pt too wide) in paragraph at lines 180--181
 []\OT1/cmr/m/n/10 Furthermore, the lin-ear part in-cor-po-rates his-tor-i-cal v
 al-
  []
@@ -566,33 +556,40 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.187 
+l.186 
       ]
-<pic/mlp.png, id=125, 760.8425pt x 651.43375pt>
+<pic/mlp.png, id=133, 760.8425pt x 651.43375pt>
 File: pic/mlp.png Graphic file (type png)
 <use pic/mlp.png>
-Package pdftex.def Info: pic/mlp.png  used on input line 196.
+Package pdftex.def Info: pic/mlp.png  used on input line 195.
 (pdftex.def)             Requested size: 261.0pt x 223.47255pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 196--197
+Overfull \hbox (9.0pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
-<pic/RNN.png, id=129, 1094.0875pt x 610.28pt>
+<pic/RNN.png, id=138, 1094.0875pt x 610.28pt>
 File: pic/RNN.png Graphic file (type png)
 <use pic/RNN.png>
-Package pdftex.def Info: pic/RNN.png  used on input line 235.
+Package pdftex.def Info: pic/RNN.png  used on input line 234.
 (pdftex.def)             Requested size: 261.0pt x 145.58554pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 235--236
+Overfull \hbox (9.0pt too wide) in paragraph at lines 234--235
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-/home/ziyan/workspace/work/main.tex:244: Undefined control sequence.
-l.244 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.241 
+       <./pic/mlp.png>]
+c:/Users/ziyan/workspace/work/main.tex:243: Undefined control sequence.
+l.243 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
                                                   _t)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -600,21 +597,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.245 \end{equation}
-                     <./pic/mlp.png>]
 
 Package natbib Warning: Citation `pascanu2012difficulty' on page 5 undefined on
- input line 259.
+ input line 258.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_u * \x 
                                                   _t) \\ & \mathbf g_f = \si...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -622,10 +612,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_f * \x 
                                                   _t) \\ & \mathbf g_o = \si...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -633,10 +623,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_o * \x 
                                                   _t) \\ & \mathbf g_c = \ta...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -644,10 +634,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_c * \x 
                                                   _t) \\ & \mathbf m_t = \ma...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -655,10 +645,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_u * \x 
                                                   _t) \\ & \mathbf g_f = \si...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -666,10 +656,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_f * \x 
                                                   _t) \\ & \mathbf g_o = \si...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -677,10 +667,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_o * \x 
                                                   _t) \\ & \mathbf g_c = \ta...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -688,10 +678,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/home/ziyan/workspace/work/main.tex:272: Undefined control sequence.
+c:/Users/ziyan/workspace/work/main.tex:271: Undefined control sequence.
 <argument> ... \mathbf h_{t-1} + \mathbf I_c * \x 
                                                   _t) \\ & \mathbf m_t = \ma...
-l.272 	\end{split}
+l.271 	\end{split}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -700,42 +690,42 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (6.25592pt too wide) in paragraph at lines 275--276
+Overfull \hbox (6.25592pt too wide) in paragraph at lines 274--275
 []\OT1/cmr/m/n/10 here $\OML/cmm/m/it/10 ^^[$ \OT1/cmr/m/n/10 is the lo-gis-tic
  sig-moid func-tion, $\OT1/cmr/bx/n/10 W[]\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W
 []\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W[]\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W[
 ]$
  []
 
-<pic/auto_encoder.png, id=143, 1272.755pt x 571.13374pt>
+<pic/auto_encoder.png, id=153, 1272.755pt x 571.13374pt>
 File: pic/auto_encoder.png Graphic file (type png)
 <use pic/auto_encoder.png>
-Package pdftex.def Info: pic/auto_encoder.png  used on input line 282.
+Package pdftex.def Info: pic/auto_encoder.png  used on input line 281.
 (pdftex.def)             Requested size: 261.0pt x 117.11803pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 282--283
+Overfull \hbox (9.0pt too wide) in paragraph at lines 281--282
  [][] 
  []
 
 
-Overfull \hbox (8.00052pt too wide) in paragraph at lines 287--288
+Overfull \hbox (8.00052pt too wide) in paragraph at lines 286--287
 \OT1/cmr/m/n/10 cod-ing func-tion, and a dis-tance func-tion be-tween the amoun
 t
  []
 
 
-Overfull \hbox (14.1393pt too wide) in paragraph at lines 292--296
-[]\OT1/cmr/m/n/10 The fea-ture en-gin-ner-ing is the pro-cess af-ter data-clear
-ning,
+Overfull \hbox (13.05594pt too wide) in paragraph at lines 291--295
+[]\OT1/cmr/m/n/10 The fea-ture en-gi-neer-ing is the pro-cess af-ter data-clean
+sing,
  []
 
-<pic/feature_engineering.png, id=144, 804.00375pt x 372.39125pt>
+<pic/feature_engineering.png, id=154, 1296.845pt x 531.9875pt>
 File: pic/feature_engineering.png Graphic file (type png)
 <use pic/feature_engineering.png>
-Package pdftex.def Info: pic/feature_engineering.png  used on input line 301.
-(pdftex.def)             Requested size: 261.0pt x 120.88365pt.
+Package pdftex.def Info: pic/feature_engineering.png  used on input line 300.
+(pdftex.def)             Requested size: 261.0pt x 107.06125pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 301--302
+Overfull \hbox (9.0pt too wide) in paragraph at lines 300--301
  [][] 
  []
 
@@ -756,36 +746,36 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.309 
+l.308 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.309 
+l.308 
        <./pic/RNN.png> <./pic/auto_encoder.png>]
-<pic/Correlation_Matrix.png, id=160, 804.00375pt x 807.015pt>
+<pic/Correlation_Matrix.png, id=170, 804.00375pt x 807.015pt>
 File: pic/Correlation_Matrix.png Graphic file (type png)
 <use pic/Correlation_Matrix.png>
-Package pdftex.def Info: pic/Correlation_Matrix.png  used on input line 316.
+Package pdftex.def Info: pic/Correlation_Matrix.png  used on input line 315.
 (pdftex.def)             Requested size: 261.0pt x 261.96892pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 316--317
+Overfull \hbox (9.0pt too wide) in paragraph at lines 315--316
  [][] 
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 324.
+put line 323.
 Missing character: There is no ï in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no š in font cmr10!
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 334.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 333.
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
+(d:/texlive-windows/2017/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 334.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 333.
 Missing character: There is no ã in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -831,10 +821,10 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no ã in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no € in font cmr10!
-<pic/our_models.png, id=161, 1254.6875pt x 710.655pt>
+<pic/our_models.png, id=171, 1254.6875pt x 710.655pt>
 File: pic/our_models.png Graphic file (type png)
 <use pic/our_models.png>
-Package pdftex.def Info: pic/our_models.png  used on input line 372.
+Package pdftex.def Info: pic/our_models.png  used on input line 371.
 (pdftex.def)             Requested size: 417.6016pt x 236.5338pt.
 
 
@@ -845,37 +835,37 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.384 
+l.383 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.384 
+l.383 
        <./pic/feature_engineering.png> <./pic/Correlation_Matrix.png>]
-Overfull \hbox (6.33372pt too wide) in paragraph at lines 387--388
-[]\OT1/cmr/m/n/10 In the pre-training pro-ce-dure We use mini-batch stochasti
+Overfull \hbox (10.77817pt too wide) in paragraph at lines 386--387
+[]\OT1/cmr/m/n/10 In the pre-training pro-ce-dure We use mini-batch stochcasti
  []
 
 
-Overfull \hbox (0.63928pt too wide) in paragraph at lines 392--394
+Overfull \hbox (0.63928pt too wide) in paragraph at lines 391--393
 []\OT1/cmr/m/n/10 We com-pare our model with other base-line model which
  []
 
-/home/ziyan/workspace/work/main.tex:400: Missing { inserted.
+c:/Users/ziyan/workspace/work/main.tex:399: Missing { inserted.
 <to be read again> 
                    ^
-l.400 ...dent measure. Specifically, assuming $y^'
+l.399 ...dent measure. Specifically, assuming $y^'
                                                   $ is the target at time t ...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-/home/ziyan/workspace/work/main.tex:400: Missing } inserted.
+c:/Users/ziyan/workspace/work/main.tex:399: Missing } inserted.
 <inserted text> 
                 }
-l.400 ...ent measure. Specifically, assuming $y^'$
+l.399 ...ent measure. Specifically, assuming $y^'$
                                                    is the target at time t a...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -883,20 +873,20 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-/home/ziyan/workspace/work/main.tex:412: Missing { inserted.
+c:/Users/ziyan/workspace/work/main.tex:411: Missing { inserted.
 <to be read again> 
                    ^
-l.412 ...}\times\left| \frac{y^{'}{_t}-y_t}{y^'_t}
+l.411 ...}\times\left| \frac{y^{'}{_t}-y_t}{y^'_t}
                                                    \right|
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-/home/ziyan/workspace/work/main.tex:412: Missing } inserted.
+c:/Users/ziyan/workspace/work/main.tex:411: Missing } inserted.
 <inserted text> 
                 }
-l.412 ...\left| \frac{y^{'}{_t}-y_t}{y^'_t} \right
+l.411 ...\left| \frac{y^{'}{_t}-y_t}{y^'_t} \right
                                                   |
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -906,12 +896,19 @@ my insertion and my current dilemma will both disappear.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 415.
+               Default added (so using `tbp') on input line 414.
 
-<pic/result.png, id=173, 1169.36874pt x 616.3025pt>
+<pic/result.png, id=184, 1169.36874pt x 616.3025pt>
 File: pic/result.png Graphic file (type png)
 <use pic/result.png>
-Package pdftex.def Info: pic/result.png  used on input line 436.
+Package pdftex.def Info: pic/result.png  used on input line 435.
+(pdftex.def)             Requested size: 417.6016pt x 220.09137pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: pic/result.png Graphic file (type png)
+<use pic/result.png>
+Package pdftex.def Info: pic/result.png  used on input line 442.
 (pdftex.def)             Requested size: 417.6016pt x 220.09137pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -921,122 +918,169 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.450 \section{Related Work}
+l.456 \section{Related Work}
                              <./pic/our_models.png>]
-Overfull \hbox (16.04561pt too wide) in paragraph at lines 451--452
-[]\OT1/cmr/m/n/10 deep-learning; RNN; RNN encoder-decoder; LSTM; LSTM
- []
-
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-(./main.bbl [8pdfTeX warning (ext4): destination with the same identifier (name
-{table.2}) has been already used, duplicate ignored
+ [8pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.12 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.9
-}) has been already used, duplicate ignored
+l.467 \section*{References}
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.12 
-      <./pic/result.png>]
-Underfull \hbox (badness 3803) in paragraph at lines 23--32
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 http : / / www . ncbi . nlm . nih . gov /
- pubmed / 18267787http : / /
+l.467 \section*{References}
+                            <./pic/result.png>] (./main.bbl
+Underfull \hbox (badness 1552) in paragraph at lines 26--33
+\OT1/cmr/m/n/8 Pad-man-ab-han, V. Sekar, E. Do-minique, M. Goliszewski,
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 35--39
+[]\OT1/cmr/m/n/8 J. Gao, []Ma-chine Learn-ing Ap-pli-ca-tions for Data Cen-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / static . googleusercontent . 
+com / media /
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 41--46
+[]\OT1/cmr/m/n/8 Y. Le-cun, Y. Ben-gio, G. Hin-ton, Deep learn-ing, Na-ture
  []
 
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no “ in font cmr8!
 
-Underfull \hbox (badness 2726) in paragraph at lines 34--40
-\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 http : / / www . statnlp . org / wp-[]con
-tent / uploads / 2016 / 02 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . researchgate . net / pr
 ofile /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmtt/m/n/8 Pankaj _ Malhotra3 / publication / 304782562 _ Long _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmtt/m/n/8 Short _ Term _ Memory _ Networks _ for _ Anomaly _ Detection _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmtt/m/n/8 in _ Time _ Series / links / 5880506308ae71eb5dbfbd10 /
  []
 
 
-Overfull \hbox (60.22656pt too wide) in paragraph at lines 48--52
+Overfull \hbox (64.47662pt too wide) in paragraph at lines 77--81
 \OT1/cmtt/m/n/8 Long-[]Short-[]Term-[]Memory-[]Networks-[]for-[]Anomaly-[]Detec
 tion-[]in-[]Time-[]Series .
  []
 
-)
+
+Underfull \hbox (badness 1552) in paragraph at lines 83--90
+[]\OT1/cmr/m/n/8 J. Schmid-hu-ber, []A lo-cal learn-ing al-go-rithm for dy-nami
+c
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 http : / / citeseerx . ist . psu . edu / 
+viewdoc / download ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
+\OT1/cmtt/m/n/8 jsessionid = B1927E88DDAA6F03912D61DD23B7DABE ? doi =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
+\OT1/cmtt/m/n/8 10 . 1 . 1 . 51 . 8813{&}rep = rep1{&}type = pdf{%}0Ahttp :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
+\OT1/cmtt/m/n/8 / / www . tandfonline . com / doi / abs / 10 . 1080 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
+\OT1/cmtt/m/n/8 09540098908915650{%}5Cnhttps : / / www . tandfonline . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--126
+\OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 http : / / dl . acm . org / citation . cf
+m ? doid = 3127479 .
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.10})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+      ])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 469.
-[9
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 470.
+[10
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 470.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 469.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 470.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 470.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 957FE45A871F0EAB9472D5155328C2A2;1203.
+(rerunfilecheck)             Checksum: D464996D1A4C8223B5118E36CB489983;1204.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 469.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 470.
  ) 
 Here is how much of TeX's memory you used:
- 7665 strings out of 492980
- 111348 string characters out of 6129239
- 216380 words of memory out of 5000000
- 11058 multiletter control sequences out of 15000+600000
+ 7735 strings out of 492980
+ 112141 string characters out of 6132487
+ 222671 words of memory out of 5000000
+ 11109 multiletter control sequences out of 15000+600000
  10586 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,17n,30p,1032b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-</media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></media/ziyan/DATA/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></media/ziyan/DATA/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></media/ziyan/DATA/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></media/ziyan/DATA/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></media/ziyan/DATA/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></media/ziyan/D
-ATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></media/zi
-yan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></med
-ia/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti8.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (9 pages, 1008376 bytes).
+ 32i,17n,30p,1397b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+><d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:
+/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/t
+exlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/tex
+live-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texli
+ve-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive-
+windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive-win
+dows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/texlive-windo
+ws/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive-window
+s/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><d:/texlive-windows/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/texlive-windows/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive-windows/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><d:/texlive-windows/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><d:/texlive-windows/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/texlive-windows/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/texlive-windows/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main.pdf (10 pages, 1150446 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 379 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
  198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
