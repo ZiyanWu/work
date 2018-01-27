@@ -16,7 +16,7 @@
 \renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm  
 \modulolinenumbers[5]
 
-\journal{DPDC}
+\journal{JPDC}
 
 \bibliographystyle{elsarticle-num}
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -81,7 +81,7 @@ Our main contributions are listed below:
 \begin{itemize}
   \item We frame performance evaluation problem as a sequence learning problem.
   \item We use representation learning by lstm auto-encoder to extract useful features from data.
-  \item We compare our methods with state-of-arts methods and show outs is superior by empirical studies.
+  \item We compare our methods with state-of-arts methods and show ours is superior by empirical studies.
 \end{itemize}
 
 The remain organization of this paper is as follows. In Section 2, we first introduce the related concept as our research background. In Section 3, we formulate our performance evaluation problem as a sequence learning problem and then our LSTM-based methods. In Section 4, we introduce our method of feature engineering to reduce the dimensionality for the high-dimensional data and  our \dabiaolv prediction model based on lstm auto-encoder. In Section 5, we show our experiment setting and demonstrate performance improvements of our methods over baseline models. Section 6 is discussion and future work. We provide concluding remarks in Section 7.
@@ -445,9 +445,7 @@ LSTM encoder-decoder with feed-foward neural network& 10.0 & 9.9  & 8.8 \\
 \end{figure*}
 
 error over diffenrent models
-
-\subsection{Performance}
-We Tuning hypermeters
+ 
 
 \section{Discussion and Future Work}
 As there are hundreds cache group in China. Although our method can be used to train on all kinds of cache group of different architecture, the model for one specific cache group, a unified models for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship change over time.
@@ -462,7 +460,7 @@ There are extensive research regarding CDN, for a large portion of internet traf
 
 \section{Conclusion}
 
-In this paper we present a data-driven approach to evaluate the performance of cache server groups. This paper shows that it is feasible to apply state-of-the-art deep learning techniques to model networked systems that provides esimation for its performance. The empirical studies shows that it has outputforms the conventional methods.
+In this paper we present a data-driven approach to evaluate the performance of cache server groups. The lstm auto-encoder can caputure the long-term temporal information in the sequences. This paper shows that it is feasible to apply state-of-the-art deep learning techniques to model networked systems that provides esimation for its performance. The empirical studies shows that ours has outputformed the conventional methods.
 
 \section*{References}
 \bibliographystyle{unsrt}
