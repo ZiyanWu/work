@@ -434,9 +434,9 @@ LSTM auto-encoder with feed-foward neural network (latent size = 5)&
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{result.png}
+    \includegraphics[width=0.8\textwidth]{lstm_auto_encoder_result.png}
     \caption{Prediction Results of LSTM auto-encoder}
-    \label{fig:prediction_Results_of_LSTM_auto-encoder}
+    \label{fig:prediction_Results_of_LSTM_auto_encoder}
 \end{figure*}
 
 \begin{figure*}[h]
@@ -446,7 +446,7 @@ LSTM auto-encoder with feed-foward neural network (latent size = 5)&
     \label{fig:prediction_results}
 \end{figure*}
 
-The prediction results on test set are in figure \ref{fig:prediction_results}. The performance comparision is listed in Table 2. From the experiment, we observe that that methods using neural networks are superior to the one that using linear model, for linear model cannot characterize the non-linear relationship between the features and targets. The recurrent network based methods perform better than the feed foward neural network, for it contains the hidden state. Our method performs the best, for LSTM auto-encoder can extract temporal structure from the high-dimensional data into a lower dimensional dense representation. For LSTM auto-encoder, we try four different configuration regarding the length of variable, which are 5, 10 , 15 and 20. We observe that although with longer latent variables LSTM auto-encoder performs better when reconstructing output as illustrated in figure , it performs worse when used to predict the \dabiaolv . We believe that it is because when the latent variable size is too large, it isn't forced to learn the representation that is most related to \dabiaolv.     
+The prediction results on test set are in figure \ref{fig:prediction_results}. The performance comparision is listed in Table 2. From the experiment, we observe that that methods using neural networks are superior to the one that using linear model, for linear model cannot characterize the non-linear relationship between the features and targets. The recurrent network based methods perform better than the feed foward neural network, for it contains the hidden state. Our method performs the best, for LSTM auto-encoder can extract temporal structure from the high-dimensional data into a lower dimensional dense representation. For LSTM auto-encoder, we try four different configuration regarding the length of variable, which are 5, 10 , 15 and 20. We observe that although with longer latent variables LSTM auto-encoder performs better when reconstructing output as illustrated in figure \ref{fig:prediction_Results_of_LSTM_auto_encoder} , it performs worse when used to predict the \dabiaolv . We believe that it is because when the latent variable size is too large, it isn't forced to learn the representation that is most related to \dabiaolv.     
  
 \section{Related Work}
 In recent year, deep learning has gained success in different fields, including image recognization, speech recognization, natural language understanding\cite{Lecun2015}. RNN\cite{Schmidhuber1989} outperform the traditional feed-forward neural network in modeling sequence data because its structure can characterize the temporal structure of input data by introducing hidden state. Training RNN is hard because of vanishing gradients problem; LSTM address these issues by introducing LSTM cell\cite{Hochreiter1997LongMemory}. LSTM has been widely proven successful in sequence modeling. In \cite{Qin}, a attention-based lstm outperforms traditional methods like ARIMA. In \cite{Zhu2017DeepUber}, a robust model was used to predict number of trips and do anomaly detection for Uber. 
