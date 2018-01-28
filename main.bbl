@@ -79,6 +79,10 @@ P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
   Short Term Memory Networks for Anomaly Detection in Time Series}}.
 \newline\urlprefix\url{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}
 
+\bibitem{TensorFlow}
+\href{https://www.tensorflow.org/}{{TensorFlow}}.
+\newline\urlprefix\url{https://www.tensorflow.org/}
+
 \bibitem{Schmidhuber1989}
 J.~Schmidhuber,
   \href{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B1927E88DDAA6F03912D61DD23B7DABE?doi=10.1.1.51.8813{\&}rep=rep1{\&}type=pdf{\%}0Ahttp://www.tandfonline.com/doi/abs/10.1080/09540098908915650{\%}5Cnhttps://www.tandfonline.com/doi/full/10.1080/09540098908915650{\%}0Ah}{{A

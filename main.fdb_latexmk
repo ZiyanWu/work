@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1517100607 "main.aux" "main.bbl" "main" 1517100611
+["bibtex main"] 1517144442 "main.aux" "main.bbl" "main" 1517144699
   "./elsarticle-num.bst" 1517097332 30860 cbd593ca59c003368735a9d8dbd22298 ""
   "d:/texlive-windows/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1516629434 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1517100604 8493 b8180b1750bc92769b91446729719d85 ""
+  "main.aux" 1517144697 8687 7be77cfaba7548660a0d1b595e2212c2 ""
   "mendeley.bib" 1517097332 75583 8a8ee8c2f0b64e43eb2ae8f9bbc56474 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1517100611 "c:\Users\ziyan\workspace\work\main.tex" "main.pdf" "main" 1517100611
-  "c:\Users\ziyan\workspace\work\main.tex" 1517100601 36156 a6337e7cc0468795012a3f537217ef39 ""
+["pdflatex"] 1517144695 "c:\Users\ziyan\workspace\work\main.tex" "main.pdf" "main" 1517144699
+  "c:\Users\ziyan\workspace\work\main.tex" 1517144692 38141 cba48aba569a7fa5ac802ec646622aba ""
   "d:/texlive-windows/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1516630547 3332 103109f5612ad95229751940c61aada0 ""
   "d:/texlive-windows/2017/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1516633228 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "d:/texlive-windows/2017/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1516634047 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -100,11 +100,11 @@
   "d:/texlive-windows/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1516634122 2561385 300e6b958631427e4837762d63b49b5c ""
   "d:/texlive-windows/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1516634204 4131557 473152e23f5fdde687172b642d6674d8 ""
   "d:/texlive-windows/2017/texmf.cnf" 1516634061 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "main.aux" 1517100604 8493 b8180b1750bc92769b91446729719d85 ""
-  "main.bbl" 1517100608 8422 b90a144b42cee7f7e17d18c8eef465c1 "bibtex main"
-  "main.out" 1517100604 1147 5eb3ce26d461a61219870a674375bd13 ""
-  "main.spl" 1517100602 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1517100601 36156 a6337e7cc0468795012a3f537217ef39 ""
+  "main.aux" 1517144697 8687 7be77cfaba7548660a0d1b595e2212c2 ""
+  "main.bbl" 1517144698 8546 c8e0901b7641b884b3767a9f787a4c97 "bibtex main"
+  "main.out" 1517144697 1217 a324705a3522ef79413149072b7920e5 ""
+  "main.spl" 1517144695 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1517144692 38141 cba48aba569a7fa5ac802ec646622aba ""
   "pic/CDN_new.png" 1517097332 103142 9c19db2a4e0776ea9e46a02c1e56a802 ""
   "pic/Correlation_Matrix.png" 1517097332 328133 42f7df7436c5ba93a9f35b07a1e3e0d8 ""
   "pic/RNN.png" 1517097332 24233 6a128efd317a0833d03e3318e6ec13f9 ""
@@ -115,8 +115,8 @@
   "pic/our_models.png" 1517097332 28242 d58a02f05a6bc1e0c9a1f04627112690 ""
   "pic/result.png" 1517097332 87650 aa18fa1ebcfaf66c9f6a7fbdcd98feea ""
   (generated)
-  "main.aux"
-  "main.out"
   "main.log"
   "main.pdf"
+  "main.aux"
   "main.spl"
+  "main.out"

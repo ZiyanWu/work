@@ -144,9 +144,6 @@ INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT pic/RNN.png
 INPUT ./pic/RNN.png
 INPUT ./pic/RNN.png
-INPUT pic/auto_encoder.png
-INPUT ./pic/auto_encoder.png
-INPUT ./pic/auto_encoder.png
 INPUT pic/feature_engineering.png
 INPUT ./pic/feature_engineering.png
 INPUT ./pic/feature_engineering.png
@@ -156,6 +153,9 @@ INPUT ./pic/Correlation_Matrix.png
 INPUT d:/texlive-windows/2017/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT d:/texlive-windows/2017/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT pic/auto_encoder.png
+INPUT ./pic/auto_encoder.png
+INPUT ./pic/auto_encoder.png
 INPUT pic/our_models.png
 INPUT ./pic/our_models.png
 INPUT ./pic/our_models.png
