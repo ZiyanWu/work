@@ -42,7 +42,7 @@
 \cortext[mycorrespondingauthor]{Corresponding author}
 
 \begin{abstract}
-In industry, Content Delivery Network(CDN) Service providers are increasingly using data-driven mechanisms to build their performance model of their service-providing systems. To build a model to accurately describe the performance of the existing infrastructure is very crucial to make resource management decisions. Conventional approaches that use hand-tuned paramete  rs or linear models have their drawback. Recently, data-driven paradigm have been shown to greatly outperform traditional methods in modeling complex systems. We design a approach that using these techniques to build a performance model for CDN cache server groups. We use deep LSTM autoencoder to capture the temporal structures from the high-dimensional monitoring data, and use a deep neural network to predict the \dabiaolv, which is a client QoS measurement from the CDN service providers perspective. The experimental results have shown that our model is able to outperform state-of-the-arts models.
+In industry, Content Delivery Network(CDN) Service providers are increasingly using data-driven mechanisms to build their performance model of their service-providing systems. To build a model to accurately describe the performance of the existing infrastructure is very crucial to make resource management decisions. Conventional approaches that use hand-tuned parameters or linear models have their drawback. Recently, data-driven paradigm have been shown to greatly outperform traditional methods in modeling complex systems. We design a approach that using these techniques to build a performance model for CDN cache server groups. We use deep LSTM autoencoder to capture the temporal structures from the high-dimensional monitoring data, and use a deep neural network to predict the \dabiaolv, which is a client QoS measurement from the CDN service providers perspective. The experimental results have shown that our model is able to outperform state-of-the-arts models.
 \end{abstract}
 \begin{keyword}
 \textit{edge computing, deep learning, content delivery networks, sequence learning, predictive analysis, high dimensional data, prognosis}
@@ -53,13 +53,13 @@ In industry, Content Delivery Network(CDN) Service providers are increasingly us
 \linenumbers
 \section{Introduction}
 % the detail of abstract
-There is a trend \cite{Jiang2017Pytheas:Exploration-Exploitation} \cite{Mao2017NeuralPensieve} \cite{Li2017} \cite{JiangVIA:Selection} \cite{GaoMachineOptimization} that using data-driven methods to model complex networked systems. Traditional approach typically use simple heuristics. These methods have several drawbacks. They cannot accurately reflect and oversimplified the complex systems due to the lack of knowledge of real-word environment. Driven by the opportunity to collect and analyze data (e.g., application quality measurement from end users), many recent proposals have demonstrated the promise of using deep learning to characterize and optimize networked systems. Drawing parallel from the success of deep-learning on pattern recognizaition, instead of using empirical non-linear learning model to describe the complex interaction of different features, we use deep learning methods and treat networked systems as a black-box.
+There is a trend \cite{Jiang2017Pytheas:Exploration-Exploitation} \cite{Mao2017NeuralPensieve} \cite{Li2017} \cite{JiangVIA:Selection} \cite{GaoMachineOptimization} that using data-driven methods to model complex networked systems. Traditional approaches typically use some simple heuristics. These methods have several drawbacks. They cannot accurately reflect the complex systems due to the lack of knowledge of real-word environment. Driven by the opportunity to collect and analyze data (e.g., application quality measurement from end users), many recent proposals have demonstrated the promise of using deep learning to characterize and optimize networked systems. Drawing parallel from the success of deep-learning on pattern recognizaition, instead of using empirical non-linear learning model to describe the complex interaction of different features, we use deep learning methods and treat networked systems as a black-box.
 
 A content delivery network (CDN) is a globally distributed networked system deployed across the Internet. Composed with geographically distributed cache servers, CDNs deliver cached content  to  customers  worldwide  based  on their geographic locations. Extensively  using  cache  servers,  content  delivery over  CDN  has  low  latency, reliability, supports better quality of experience and security.
 
 The CDN Service providers are increasingly using data-driven mechanisms to build their performance model of their service-providing systems. To build a model to accurately provide an understanding of the performance of the existing infrastructure such as the health of cache groups and network status, is very crucial to make resource management decisions including content placement, network traffic scheduling, load balance of the CDN network. Modeling all available physical resources, we can maximize a resource utilization in terms of service quality, cost, profit, etc.
 
-Generally CDN providers don't have direct measurement from the clients (the logs from video players, web browser that can show the QoE of clients). Instead, they use the indirect measurement \dabiaolv defined in Section II which is collected and analyzed from the log of the HA proxy of CDN cache groups, which is . The computation of \dabiaolv is done offline . In order to enable themselves make resource management decisions in real time, the CDN providers have to use the metrics that can be collected in the real time to infer the \dabiaolv. 
+Generally CDN providers don't have direct measurement from the clients (the logs from video players, web browser that can show the QoE of clients). Instead, they use the indirect measurement \dabiaolv which is collected and calculated from the log of the HA proxy of CDN cache groups. The computation of \dabiaolv is done offline . In order to enable themselves make resource management decisions in real time, the CDN providers have to use the metrics that can be collected in the real time to infer the \dabiaolv. 
 
 Cache server groups can be characterised as multi-dimensional, highly non-linear, time variant vectors. The metrics that collected from members of the CDN cache server groups are sequence data that are measured every minute, which have hundreds of dimensions. The state-of-art methods are typically using simple heuristics  which are oversimplifed and biased due to the human experience, or linear models, which cannot characterize the complex relationship between multiple metrics. Deep learning is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network architectures composed of multiple non-linear transformations \cite{Lecun2015}. They have a lot of successful applications in sequence modeling. Compared to other machine learning techniques, a lot of work show that it can detect complex relationships among features, can extract hierarchical level of features from high-dimensional data, including monitoring data.
 
@@ -94,7 +94,7 @@ The remain organization of this paper is as follows. In Section 2, we first intr
 
 A content delivery network or content distribution network (CDN) (figure 1) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multi-media content to the clients, based on the locations of the clients and cache servers nearby the clients. The basic working procedure is as follows. Step 1：client send a request to local dns. Step 2: the DNS finds the CNAME and redirects the request to the gslb (global sever load balance). Step 3: the local DNS server sends request to the glsb and glsb returns the ip address of CDN servers based on the scheduling policy. Step 4: the local DNS return the ip address to the clients. Step 5: clients make a request to fetch content from the selected PoP. Step 6: the cache server groups will pull the content from source website if the content doesn't exsist locally. Step 7: content is sent to the clients.
 
-A CDN cache server group is the basic resource scheduling unit for CDN. A CDN cache group is a load balanced cluster that consists of interconnected cache servers. A typical implementation consists of HAproxy and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server. In heterogeneous cluster,  weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous structure of a cluster adds complexity to the feature engineering.
+A CDN cache server group is the basic resource scheduling unit for CDN. A CDN cache group is a load balanced cluster that consists of interconnected cache servers. A typical implementation consists of HAproxy and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server in a homogenours cluster. In heterogeneous cluster, weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous structure of a cluster adds complexity to the feature engineering.
 
 As CDN providers don't have direct QoS measurement from the clients (the logs from video players, web browser that can show the QoE), so they use the indirect measurement \dabiaolv which is calculated from log of the HA proxy of CDN cache groups with a delay about three minutes. 
 
@@ -152,7 +152,7 @@ aggregate.all\_machine.CPU.max\\
 \section{Problem Formulation and Models}
 We argue that performance evaluation as a sequence learning problem. Since we are able to collect the caching servers performance metrics and network metrics at a certain time interval, we can use a sequence models to describe relationship between metrics collected from  cache groups and \dabiaolv
 
-There are three categories of sequence learning problem, which are many to one, many to one and many one. Our goal is to model the relationship between a sequence collected metrics and \dabiaolv within a certain period of time, which is many to one. In general, we can use the following formulation to describe the prediction process.
+There are three categories of sequence learning problem, which are many to many, one to many and many to one. Our goal is to model the relationship between a sequence collected metrics and \dabiaolv within a certain period of time, which is many to one. In general, we can use the following formulation to describe the prediction process.
 
 Giving a sequence of vectors, $\{x_n\}=\{x_{\alpha} \in R^{d}|\alpha \in N\}, $ , where $d$ is the number of the features, we use $\{x_n\}$ to represent the sequence and $x_t$ to describe a data point at time t with $d$ dimensions.
 
@@ -164,7 +164,7 @@ Many models can be used to approximate $f$ in sequence modeling. The most naive 
 
 \subsection{linear models for sequence learning}
 
-There are conventional approaches which use data to learn: use the multiple linear regression model(MLR). The MLR method builds a model of a sequence that is composed of a linear part and a random noise part. The linear part models the linear relationship between the dependent variables and independent variables, the random noise reflects the unpredictable randomness. Formally, the model for multiple linear regression, given n observations, is 
+There are some conventional approaches which use data to learn: use the multiple linear regression model(MLR). The MLR method builds a model of a sequence that is composed of a linear part and a random noise part. The linear part models the linear relationship between the dependent variables and independent variables, the random noise reflects the unpredictable randomness. Formally, the model for multiple linear regression, given n observations, is 
     $$y_t = c+\sum_{i=t-n+1}^{t}(\beta_i ∗ x_{t_i})+\epsilon_t$$
 
 Furthermore, the linear part incorporates historical values of the sequence. Here, y denotes the target we want to model, c denotes the constant parameter of the linear decomposition, β denotes the parameters to be computed and epsilon reflects the random noise part. The best-fitting line for the observed data is calculated by the least square method.
@@ -363,7 +363,7 @@ Prior to fitting the data prediction model, we first conduct a pre-training step
     \label{fig:our_models}
 \end{figure*}
 
-As illustrated in figure \ref{fig:our_models}. Given a multi-variate time series of data, the encoder reads the vectors as input and transform them as latent variables. The latent variables are  
+As illustrated in figure \ref{fig:our_models}. Given a multi-variate time series of data, the encoder reads the vectors as input and transform them as latent variables. Then, a feed foward network is attached to to the LSTM autoencoder. During the pretraining, only the LSTM autoencoder is trained. In the second step, a fulley connected layer take the latent variables as input. The wights are tuned with 
 
 \section{Evaluation}
 \subsection{Experimental Settings and Dataset}
@@ -423,18 +423,18 @@ LSTM encoder-decoder with feed-foward neural network& 10.0 & 9.9  & 8.8 \\
 \begin{figure*}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{result.png}
-    \caption{Prediction Results of LSTM auto-encoded with feed-forward neural network}
-    \label{fig:Prediction Results}
+    \caption{Prediction Results of LSTM autoencoder with feed-forward neural network}
+    \label{fig:Prediction_Results}
 \end{figure*}
 
 \begin{figure*}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{result.png}
-    \caption{errors comparaison of different models}
-    \label{fig:Prediction Results}
+    \caption{The RMSE for the different forecast models}
+    \label{fig:errors_comparaison_of_different_models}
 \end{figure*}
 
-error over diffenrent models
+The prediction results on test set are in figure \ref{fig:Prediction_Results}. The performance comparision is listed in Table 2. The comparasion of different model is in figure \ref{fig:errors_comparaison_of_different_models}.
  
 \section{Related Work}
 In recent year, deep learning has gained success in different fields, including image recognization, speech recognization, natural language understanding\cite{Lecun2015}. RNN\cite{Schmidhuber1989} outperform the traditional feed-forward neural network in modeling sequence data because its structure can characterize the temporal structure of input data by introducing hidden state. Training RNN is hard because of vanishing gradients problem; LSTM address these issues by introducing LSTM cell\cite{Hochreiter1997LongMemory}. LSTM has been widely proven successful in sequence modeling. In \cite{Qin}, a attention-based lstm outperforms traditional methods like ARIMA. In \cite{Zhu2017DeepUber}, a robust model was used to predict number of trips and do anomaly detection for Uber. 
@@ -447,7 +447,7 @@ There are extensive research regarding CDN, for a large portion of internet traf
 
 In this paper we present a data-driven approach to evaluate the performance of cache server groups. The lstm auto-encoder can capture the long-term temporal information in the sequences. This paper shows that it is feasible to apply state-of-the-art deep learning techniques to model networked systems that provides estimation for its performance. The empirical studies shows that ours has outperformed the conventional methods.
 
-%As there are hundreds cache group in China. Although our method can be used to train on all kinds of cache group of different architecture, the model for one specific cache group, a unified models for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship change over time.
+As there are hundreds cache group in China. Although our method can be used to train on all kinds of cache group of different architecture, the model for one specific cache group, a unified models for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship change over time.
 
 \section{Acknowledgment}
 The work of this paper is supported by National Natural Science Foundation of China under Grant No.61728202-Research on Internet of Things Big Data Transmission and Processing Architecture based on Cloud-Fog Hybrid Computing Model & Grant No. 61572137-Multiple Clouds based CDN as a Service Key Technology Research, and Shanghai 2016 Innovation Action Project under Grant 16DZ1100200-Data-trade-supporting Big Data Testbed.

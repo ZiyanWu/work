@@ -126,8 +126,6 @@ INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
-INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT d:/texlive-windows/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT d:/texlive-windows/2017/texmf-dist/tex/latex/base/omscmr.fd
@@ -168,6 +166,7 @@ INPUT pic/result.png
 INPUT ./pic/result.png
 INPUT main.bbl
 INPUT main.bbl
+INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT main.aux
@@ -188,7 +187,6 @@ INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pf
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
