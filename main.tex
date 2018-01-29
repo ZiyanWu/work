@@ -110,12 +110,18 @@ group 1\\
 \hline  
 cpu1.usage\\
 cpu2.usage\\
+cpu3.usage\\
+cpu4.usage\\
+cpu5.usage\\
+cpu6.usage\\
 ...  \\
 mem\_cached\\
 mem\_buffers\_cache\_free\\
 memory.swap\\ 
 disk.used.sda1\\
 disk.used.sda2\\
+disk.used.sda3\\
+disk.used.sda4\\
 ...\\
 channeltraffic\_in\\
 channeltraffic\_in\\
@@ -128,6 +134,11 @@ iowait.wait\\
 hitratio.port8101\\
 hitratio.port8102\\
 ...\\
+load.total_load\\
+resptime.resp.resp8105\\
+resptime.resp.resp80\\
+resptime.resp.resp8101\\
+...\\
 \hline  
 group 2\\
 \hline 
@@ -135,6 +146,7 @@ aggregate.cpu\\
 aggregate.diskused\\
 aggregated.ioutil\\
 aggregate.CPU.max\\
+aggregate.resptime\\
 ....\\
 \hline  
 group 3\\
@@ -143,6 +155,8 @@ aggregate.all\_machine.cpu\\
 aggregate.all\_machine.diskused\\
 aggregated.all\_machine.ioutil\\
 aggregate.all\_machine.CPU.max\\
+aggregate.all.resptime\\
+...\\
 \hline
 \end{tabular}
 \caption{list of candidate input features from one cache server. We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single cache server. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}
@@ -162,7 +176,7 @@ where $n$ is the window size and $f$ is the mapping we want to learn from the da
 
 Many models can be used to approximate $f$ in sequence modeling. The most naive way is to use simple heuristics, which is use exponential moving average to linearly map each metrics to a score in a certain time interval. The paremeters are depending on the experience of the operators. This methods are impractical: the model can hardly generalize well and requires tedious repetitive tuning.
 
-\subsection{linear models for sequence learning}
+\subsection{Linear Models for Sequence Learning}
 
 There are some conventional approaches which use data to learn: use the multiple linear regression model(MLR). The MLR method builds a model of a sequence that is composed of a linear part and a random noise part. The linear part models the linear relationship between the dependent variables and independent variables, the random noise reflects the unpredictable randomness. Formally, the model for multiple linear regression, given n observations, is 
     $$y_t = c+\sum_{i=t-n+1}^{t}(\beta_i ∗ x_{t_i})+\epsilon_t$$
@@ -173,14 +187,14 @@ Furthermore, the linear part incorporates historical values of the sequence. Her
 Linear models are easy to implement and have good interpretation and thus are widely used in many real work. However, linear models are shown not sufficient to describe some nonlinear behaviors of the complex network systems. In many cases, neural networks tend to outperform linear models [A comparison of artificial neural network and time series models for forecasting commodity prices]. In our experiments, we observe a non-linear relationship between the metrics and \dabiaolv.
 
 
-\subsection{non-linear for sequence learning}
+\subsection{Non-linear for Sequence Learning}
 Sequence prediction often involves forecasting the next value in a real valued sequence or outputting a class label for an input sequence.
 
 Deep learning (DL) is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network (ANN) architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequence modeling. Compared to other machine learning techniques, it can detect complex relationships among features, can extract hierarchical level of features from raw data. So it can produce more accurate result and build a model more accurate with less time. They are advantageous for modeling intricate systems because neural networks do not require the user to predefine the feature interactions in the model, which assumes relationships within the data. Instead, the neural network searches for patterns and interactions between features to automatically generate a best fit model.
 
 One of the more popular kind of deep neural networks is the Recurrent Neural Network (RNN). RNNs are a class of neural networks that depend on the sequential nature of their input. Such inputs could be text, speech, time series, and anything else in which the occurrence of an element in the sequence is dependent on the elements that appeared before it.
 
-\subsubsection{Basic feed forward neural network}
+\subsubsection{Feed Forward Neural Network}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{mlp.png}
@@ -204,6 +218,13 @@ where sigmoid is the activation function:
     & \text{sigmoid}(x)=\frac{1}{1+e^{-x}}
     \end{split}
 \end{equation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{sigmoid.png}
+    \caption{Sigmoid function as activation function}
+    \label{fig:sigmoid}
+\end{figure}
 
 the loss function $J$ use mean square error:
     $J$
@@ -231,7 +252,7 @@ state vector which acts as a memory for past information. They learn to selectiv
 RNNs maintain a hidden vector $\mathbf h$, which is updated at time step $t$ as follows:
 
 \begin{equation}
-	\mathbf h_t = \tanh(\mathbf W * \mathbf h_{t-1} + \mathbf I * \x_t)
+	\mathbf h_t = \tanh(\mathbf W * \mathbf h_{t-1} + \mathbf I * x_t)
 \end{equation}
 
 where $\tanh$ is the hyperbolic tangent function, $\mathbf W$ is the recurrent weight matrix and $U$ is a input wight matrix. The hidden state $\mathbf h$ is then used to make a prediction
@@ -280,7 +301,7 @@ The correlation matrix we calculate is pictured in figure \ref{fig:Correlation_m
     \label{fig:Correlation_matrix}
 \end{figure}
 
-After we calculate the correlation matrix for all the features, the correlation of thses features are regarded as distance. Then, we use DBSCAN to cluster these features to eliminate close ones. By defining the neighorhood parameter $\epsilon$, we specify how much extent we regard two features as close. If a feature is highly correlated with another one, we should add these features into the same cluster. When the clustering is done, we choose the representative feature in the cluster. We formulate the process in Algorithm 1.
+After we calculate the correlation matrix for all the features, the correlation of thses features are regarded as distance. Then, we use DBSCAN to cluster these features to eliminate close ones. By defining the neighorhood parameter $\epsilon$, we specify how much extent we regard two features as close. If a feature is highly correlated with another one, we should add these features into the same cluster. When the clustering is done, we choose the representative feature from the cluster. We formulate the process in Algorithm 1.
 
 \begin{algorithm}[t]
 \caption{Feature Aggregation and Selection} 
@@ -325,21 +346,35 @@ After we calculate the correlation matrix for all the features, the correlation 
 
 \subsection{Prediction Model Design}
 
-In this section, we introduce how the architecture we use to predict \dabiaolv of CDN cache group using the data output from the feature engineering stage. The key components of our model are LSTM, LSTM auto-encoder and deep feed foward neurla network.
+In this section, we introduce how the architecture we use to predict \dabiaolv of CDN cache group using the data output from the feature engineering stage. The key components of our model are LSTM, LSTM auto-encoder and deep feed foward neural network.
 
 \subsubsection{LSTM}
-LSTM, introduced in \cite{Hochreiter1997LongMemory}, addresses the problem of vanishing gradients by introducing a memory cell. \cite{MalhotraLongSeries} applied in time series. The inner working of LSTM are listed follows:
+LSTM, introduced in \cite{Hochreiter1997LongMemory}, addresses the problem of vanishing gradients by introducing a memory cell. \cite{MalhotraLongSeries} applied in time series. The innere working of LSTM(figure \ref{fig:LSTMCELL}) are listed follows:
 
 \begin{equation}
 	\begin{split}
-		& \mathbf g_u = \sigma(\mathbf W_u * \mathbf h_{t-1} + \mathbf I_u * \x_t) \\
-		& \mathbf g_f = \sigma(\mathbf W_f * \mathbf h_{t-1} + \mathbf I_f * \x_t) \\
-		& \mathbf g_o = \sigma(\mathbf W_o * \mathbf h_{t-1} + \mathbf I_o * \x_t) \\
-		& \mathbf g_c = \tanh(\mathbf W_c * \mathbf h_{t-1} + \mathbf I_c * \x_t) \\
+		& \mathbf g_u = \sigma(\mathbf W_u * \mathbf h_{t-1} + \mathbf I_u * x_t) \\
+		& \mathbf g_f = \sigma(\mathbf W_f * \mathbf h_{t-1} + \mathbf I_f * x_t) \\
+		& \mathbf g_o = \sigma(\mathbf W_o * \mathbf h_{t-1} + \mathbf I_o * x_t) \\
+		& \mathbf g_c = \tanh(\mathbf W_c * \mathbf h_{t-1} + \mathbf I_c *  x_t) \\
 		& \mathbf m_t = \mathbf g_f \odot \mathbf +  \mathbf g^u \odot \mathbf g^c \\
 		& \mathbf h_t = \tanh(\mathbf g_o \odot \mathbf m_{t-1}) 
 	\end{split}
 \end{equation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{lstm_cell.png}
+    \caption{LSTM cell}
+    \label{fig:LSTMCELL}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{tanh.png}
+    \caption{tanh as activation function}
+    \label{fig:tanh}
+\end{figure}
 
 here $\sigma$ is the logistic sigmoid function, $\mathbf W_u, \mathbf W_f, \mathbf W_o, \mathbf W_c$ are recurrent weight matrices and $\mathbf I_u, \mathbf I_f, \mathbf I_o, \mathbf I_c$ are projection matrices.
 
@@ -352,7 +387,7 @@ here $\sigma$ is the logistic sigmoid function, $\mathbf W_u, \mathbf W_f, \math
     \label{fig:RNN_encoder-decoder}
 \end{figure}
 
-An auto-encoder contains: an encoding function, a decoding function, and a distance function between the amount of information loss between the compressed representation of your data and the decompressed representation (i.e. a "loss" function). The encoder and decoder will be chosen to be deep layered lstm network. So the parameters of the encoding/decoding functions can be optimize to minimize the reconstruction loss, using Stochastic Gradient Descent.
+An LSTM auto-encoder (figure \ref{fig:RNN_encoder-decoder}) contains: an encoding function, a decoding function, and a distance function between the amount of information loss between the compressed representation of your data and the decompressed representation (i.e. a "loss" function). The encoder and decoder will be chosen to be deep layered lstm network. So the parameters of the encoding/decoding functions can be optimize to minimize the reconstruction loss, using Stochastic Gradient Descent.
 
 Prior to fitting the data prediction model, we first conduct a pre-training step to fit an encoder that can extract useful and representative embeddings froma  time  series.  The  goals  are  to  ensure  that  (i)  the  learned embedding  provides  useful  features  for  prediction  and  (ii) unusual input can be captured in the embedded space, which will get further propagated to the prediction network in the next step.
 
@@ -363,12 +398,15 @@ Prior to fitting the data prediction model, we first conduct a pre-training step
     \label{fig:our_models}
 \end{figure*}
 
-As illustrated in figure \ref{fig:our_models}. Given a multi-variate time series of data, the encoder reads the vectors as input and transform them as latent variables. During the pretraining, only the the weights of LSTM auto-encoder are trained. The LSTM auto-encoder is trained to reconstruct the input on the output side. In the second step, a fulley connected feed foward network take the latent variables which are the ouputs of the encoder as input. The targets are the \dabiaolv.
+As illustrated in figure \ref{fig:our_models}. Given a multi-variate time series of data, the encoder reads the vectors as input and transform them as latent variables. During the pretraining, only the the weights of LSTM auto-encoder are trained. The LSTM auto-encoder is trained to reconstruct the input on the output side. 
+
+In the second step, a fully connected feed foward network take the latent variables which are the ouputs of the encoder as input. We take the latent variables that learn variable as tranining set and \dabiaolv as the targets and use the gradient descent to train the network. We use 9/10 of the data as training set and 1/10 of the data as test set.
+
 \section{Evaluation}
 \subsection{Experimental Settings and Dataset}
 Our implementation uses the Google opensource deep learning library, Tensorflow\cite{TensorFlow}, version 1.2.0. We ran our experiments on a physical machine running an Ubuntu 16.04 operation system, intel i7-6700HQ, 16 GB memory, and GPU gtx1060.
 
-To test the performance, we select two cache groups with average request above 7000 per minutes. The first cache servers groups have 13 cache servers while the other have 10 cache servers. The  metrics are raw data collected from the cache servers, including cpu utilization, network utilization, disk utilization, memory utilization of two cache groups servers. The frequency of the metrics and  \dabiaolv are both minute-by-minute. This data covers the period from December 20, 2017 to January 26, 2018.
+To test the performance, we select two cache groups with average request above 7000 per minute. The first cache servers groups have 13 cache servers while the other have 10 cache servers. The  metrics are raw data collected from the cache servers, including cpu utilization, network utilization, disk utilization, memory utilization of two cache groups servers. The frequency of the metrics and  \dabiaolv are both minute-by-minute. This data covers the period from December 20, 2017 to January 26, 2018.
 
 In the experiments, 5-fold cross validation is used to evaluate the accuracy of predictions. This divides the entire data set into 5 equal parts.  Prediction is repeated510 times, each time keeping one of the 5 parts as test data and the other 4 parts as training data to build the prediction model. Finally, test results on all the 5 parts are accumulated together to calculate the average prediction accuracy.
 
@@ -385,7 +423,7 @@ We compare our model with other baseline model which are listed follow:
 
 \subsection{Experimental Results}
 
-We use three different evaluation metrics to compare our models and methods. Among them, root mean squared error (RMSE) and mean absolute error (MAE) are two scale-dependent measures, and mean absolute percentage error (MAPE) is a scale-dependent measure. Specifically, assuming $y^'$ is the target at time t and $y$ is the predicted value at time t. 
+We use three different evaluation metrics to compare our models and methods. Among them, root mean squared error (RMSE) and mean absolute error (MAE) are two scale-dependent measures. Specifically, assuming $y^'$ is the target at time t and $y$ is the predicted value at time t. 
 
 
 \begin{equation}
@@ -396,38 +434,35 @@ We use three different evaluation metrics to compare our models and methods. Amo
 	 MAE(y^{'},y)=\frac{1}{N}\times\left| y^{'}{_t}-y_t \right|
 \end{equation}
 
-\begin{equation}
-	 MAPE(y^{'},y)=\frac{1}{N}\times\left| \frac{y^{'}{_t}-y_t}{y^'_t} \right|
-\end{equation}
 
 \begin{table*}[]
 \centering
 \caption{Performance Comparison}
 \label{my-label}
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|l|l|l|}
 \hline
-Models & MAE & MAPE & RMSE\\
+Models & MAE  & RMSE\\
 \hline
 multiple linear regression model 
-& 0.598 & 0.604  & 0.573 \\
+& $0.07841$   & $0.07734$ \\
 \hline
 feed-foward neural network with sliding windows 
-& 0.387 & 0.481  & 0.427 \\
+& 0.03870  & 0.04274 \\
 \hline
 vanilla LSTM model
-& 0.188 & 0.236  & 0.164 \\
+& 0.01880  & 0.01642 \\
 \hline
 LSTM auto-encoder with feed-foward neural network (latent size = 20)& 
-0.142 & 0.211  & 0.133 \\
+0.01425 &  0.01334 \\
 \hline
 LSTM auto-encoder with feed-foward neural network (latent size = 15)& 
-0.178 & 0.146  & 0.123 \\
+0.01787 &  0.01239 \\
 \hline
 LSTM auto-encoder with feed-foward neural network (latent size = 10)& 
-0.138 & 0.124  & 0.097 \\
+0.01384 &  0.00971 \\
 \hline
 LSTM auto-encoder with feed-foward neural network (latent size = 5)& 
-0.168 & 0.141  & 0.127 \\
+0.01682 & 0.01271 \\
 \hline    
 \end{tabular}
 \end{table*}
@@ -446,7 +481,7 @@ LSTM auto-encoder with feed-foward neural network (latent size = 5)&
     \label{fig:prediction_results}
 \end{figure*}
 
-The prediction results on test set are in figure \ref{fig:prediction_results}. The performance comparision is listed in Table 2. From the experiment, we observe that that methods using neural networks are superior to the one that using linear model, for linear model cannot characterize the non-linear relationship between the features and targets. The recurrent network based methods perform better than the feed foward neural network, for it contains the hidden state. Our method performs the best, for LSTM auto-encoder can extract temporal structure from the high-dimensional data into a lower dimensional dense representation. For LSTM auto-encoder, we try four different configuration regarding the length of variable, which are 5, 10 , 15 and 20. We observe that although with longer latent variables LSTM auto-encoder performs better when reconstructing output as illustrated in figure \ref{fig:prediction_Results_of_LSTM_auto_encoder} , it performs worse when used to predict the \dabiaolv . We believe that it is because when the latent variable size is too large, it isn't forced to learn the representation that is most related to \dabiaolv.     
+The prediction results on test set are in figure \ref{fig:prediction_results}. The performance comparision is listed in Table 2. From the experiment, we observe that that methods using neural networks are superior to the one that using linear model, for linear model cannot characterize the non-linear relationship between the features and targets. The recurrent network based methods perform better than the feed foward neural network, for it contains the hidden state. Our method performs the best, for LSTM auto-encoder can extract temporal structure from the high-dimensional data into a lower dimensional dense representation. For LSTM auto-encoder, we try four different configuration regarding the length of latent variable, which are 5, 10 , 15 and 20. We observe that although with longer latent variables LSTM auto-encoder performs better when reconstructing output as illustrated in figure \ref{fig:prediction_Results_of_LSTM_auto_encoder} , it performs worse when used to predict the \dabiaolv . We believe that it is because when the latent variable size is too large, it isn't forced to learn the representation that is most related to \dabiaolv.     
  
 \section{Related Work}
 In recent year, deep learning has gained success in different fields, including image recognization, speech recognization, natural language understanding\cite{Lecun2015}. RNN\cite{Schmidhuber1989} outperform the traditional feed-forward neural network in modeling sequence data because its structure can characterize the temporal structure of input data by introducing hidden state. Training RNN is hard because of vanishing gradients problem; LSTM address these issues by introducing LSTM cell\cite{Hochreiter1997LongMemory}. LSTM has been widely proven successful in sequence modeling. In \cite{Qin}, a attention-based lstm outperforms traditional methods like ARIMA. In \cite{Zhu2017DeepUber}, a robust model was used to predict number of trips and do anomaly detection for Uber. 
@@ -459,7 +494,7 @@ There are extensive research regarding CDN, for a large portion of internet traf
 
 In this paper we present a data-driven approach to evaluate the performance of cache server groups. The lstm auto-encoder can capture the long-term temporal information in the sequences. This paper shows that it is feasible to apply state-of-the-art deep learning techniques to model networked systems that provides estimation for its performance. The empirical studies shows that ours has outperformed the conventional methods.
 
-As there are hundreds cache group in China. Although our method can be used to train on all kinds of cache group of different architecture, the model for one specific cache group, a unified models for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship changes over time.
+As there are hundreds cache group in China. Although our method can be used to train on all kinds of cache group of different architecture, the trained model is for one specific cache group. A unified models for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship changes over time.
 
 \section{Acknowledgment}
 The work of this paper is supported by National Natural Science Foundation of China under Grant No.61728202-Research on Internet of Things Big Data Transmission and Processing Architecture based on Cloud-Fog Hybrid Computing Model & Grant No. 61572137-Multiple Clouds based CDN as a Service Key Technology Research, and Shanghai 2016 Innovation Action Project under Grant 16DZ1100200-Data-trade-supporting Big Data Testbed.

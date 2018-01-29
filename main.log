@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  28 JAN 2018 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  29 JAN 2018 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -528,22 +528,60 @@ Overfull \hbox (12.04669pt too wide) in paragraph at lines 97--98
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 103.
 
+/media/ziyan/DATA/work/main.tex:137: Missing $ inserted.
+<inserted text> 
+                $
+l.137 load.total_
+                 load\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/media/ziyan/DATA/work/main.tex:138: Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.138 r
+       esptime.resp.resp8105\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/media/ziyan/DATA/work/main.tex:138: Missing $ inserted.
+<inserted text> 
+                $
+l.138 r
+       esptime.resp.resp8105\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/media/ziyan/DATA/work/main.tex:138: Missing } inserted.
+<inserted text> 
+                }
+l.138 r
+       esptime.resp.resp8105\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \section{Problem Formulation and Models}
+l.166 \section{Problem Formulation and Models}
                                               pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.2}) has been already used, duplicate ig
 nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.152 \section{Problem Formulation and Models}
+l.166 \section{Problem Formulation and Models}
                                                <./pic/CDN_new.png> <./pic/cache
 _group.png>]
-Overfull \hbox (0.47256pt too wide) in paragraph at lines 167--168
+Overfull \hbox (0.47256pt too wide) in paragraph at lines 181--182
 []\OT1/cmr/m/n/10 There are some con-ven-tional ap-proaches which use data
  []
 
@@ -553,7 +591,7 @@ Missing character: There is no — in font cmr10!
 Missing character: There is no Î in font cmr10!
 Missing character: There is no ² in font cmr10!
 
-Overfull \hbox (0.36156pt too wide) in paragraph at lines 170--171
+Overfull \hbox (0.36156pt too wide) in paragraph at lines 184--185
 []\OT1/cmr/m/n/10 Furthermore, the lin-ear part in-cor-po-rates his-tor-i-cal v
 al-
  []
@@ -563,49 +601,56 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.174 
+l.188 
       ]
 <pic/mlp.png, id=129, 760.8425pt x 651.43375pt>
 File: pic/mlp.png Graphic file (type png)
 <use pic/mlp.png>
-Package pdftex.def Info: pic/mlp.png  used on input line 186.
+Package pdftex.def Info: pic/mlp.png  used on input line 200.
 (pdftex.def)             Requested size: 261.0pt x 223.47255pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 186--187
+Overfull \hbox (9.0pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<pic/sigmoid.png, id=130, 357.335pt x 238.8925pt>
+File: pic/sigmoid.png Graphic file (type png)
+<use pic/sigmoid.png>
+Package pdftex.def Info: pic/sigmoid.png  used on input line 224.
+(pdftex.def)             Requested size: 261.0pt x 174.49577pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 224--225
+ [][] 
+ []
+
 [4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.221 
-       <./pic/mlp.png>]
+l.235 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.235 
+       <./pic/mlp.png> <./pic/sigmoid.png>]
 <pic/RNN.png, id=145, 1094.0875pt x 610.28pt>
 File: pic/RNN.png Graphic file (type png)
 <use pic/RNN.png>
-Package pdftex.def Info: pic/RNN.png  used on input line 225.
+Package pdftex.def Info: pic/RNN.png  used on input line 246.
 (pdftex.def)             Requested size: 261.0pt x 145.58554pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 225--226
+Overfull \hbox (9.0pt too wide) in paragraph at lines 246--247
  [][] 
  []
 
-/media/ziyan/DATA/work/main.tex:234: Undefined control sequence.
-l.234 ...thbf W * \mathbf h_{t-1} + \mathbf I * \x
-                                                  _t)
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (13.05594pt too wide) in paragraph at lines 254--258
+Overfull \hbox (13.05594pt too wide) in paragraph at lines 275--279
 []\OT1/cmr/m/n/10 The fea-ture en-gi-neer-ing is the pro-cess af-ter data-clean
 sing,
  []
@@ -613,10 +658,10 @@ sing,
 <pic/feature_engineering.png, id=148, 1296.845pt x 531.9875pt>
 File: pic/feature_engineering.png Graphic file (type png)
 <use pic/feature_engineering.png>
-Package pdftex.def Info: pic/feature_engineering.png  used on input line 263.
+Package pdftex.def Info: pic/feature_engineering.png  used on input line 284.
 (pdftex.def)             Requested size: 261.0pt x 107.06125pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 263--264
+Overfull \hbox (9.0pt too wide) in paragraph at lines 284--285
  [][] 
  []
 
@@ -629,265 +674,200 @@ Missing character: There is no ’ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-<pic/Correlation_Matrix.png, id=150, 804.00375pt x 807.015pt>
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.292 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.292 
+       <./pic/RNN.png> <./pic/feature_engineering.png>]
+<pic/Correlation_Matrix.png, id=165, 804.00375pt x 807.015pt>
 File: pic/Correlation_Matrix.png Graphic file (type png)
 <use pic/Correlation_Matrix.png>
-Package pdftex.def Info: pic/Correlation_Matrix.png  used on input line 278.
+Package pdftex.def Info: pic/Correlation_Matrix.png  used on input line 299.
 (pdftex.def)             Requested size: 261.0pt x 261.96892pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 278--279
+Overfull \hbox (9.0pt too wide) in paragraph at lines 299--300
+ [][] 
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 307.
+Missing character: There is no ï in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no š in font cmr10!
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 317.
+
+(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 317.
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ï in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no š in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ã in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no € in font cmr10!
+<pic/lstm_cell.png, id=169, 550.055pt x 352.31625pt>
+File: pic/lstm_cell.png Graphic file (type png)
+<use pic/lstm_cell.png>
+Package pdftex.def Info: pic/lstm_cell.png  used on input line 367.
+(pdftex.def)             Requested size: 261.0pt x 167.17992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 367--368
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
+<pic/tanh.png, id=170, 357.335pt x 238.8925pt>
+File: pic/tanh.png Graphic file (type png)
+<use pic/tanh.png>
+Package pdftex.def Info: pic/tanh.png  used on input line 374.
+(pdftex.def)             Requested size: 261.0pt x 174.49577pt.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.284 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.284 
-       <./pic/RNN.png> <./pic/feature_engineering.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 286.
-Missing character: There is no ï in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no š in font cmr10!
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 296.
+Overfull \hbox (9.0pt too wide) in paragraph at lines 374--375
+ [][] 
+ []
 
 
-(/media/ziyan/DATA/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 296.
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ï in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-Missing character: There is no š in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ã in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no € in font cmr10!
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_u * \x 
-                                                  _t) \\ & \mathbf g_f = \si...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_f * \x 
-                                                  _t) \\ & \mathbf g_o = \si...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_o * \x 
-                                                  _t) \\ & \mathbf g_c = \ta...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_c * \x 
-                                                  _t) \\ & \mathbf m_t = \ma...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_u * \x 
-                                                  _t) \\ & \mathbf g_f = \si...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_f * \x 
-                                                  _t) \\ & \mathbf g_o = \si...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_o * \x 
-                                                  _t) \\ & \mathbf g_c = \ta...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/media/ziyan/DATA/work/main.tex:341: Undefined control sequence.
-<argument> ... \mathbf h_{t-1} + \mathbf I_c * \x 
-                                                  _t) \\ & \mathbf m_t = \ma...
-l.341 	\end{split}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (6.25592pt too wide) in paragraph at lines 344--345
+Overfull \hbox (6.25592pt too wide) in paragraph at lines 379--380
 []\OT1/cmr/m/n/10 here $\OML/cmm/m/it/10 ^^[$ \OT1/cmr/m/n/10 is the lo-gis-tic
  sig-moid func-tion, $\OT1/cmr/bx/n/10 W[]\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W
 []\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W[]\OML/cmm/m/it/10 ; \OT1/cmr/bx/n/10 W[
 ]$
  []
 
-<pic/auto_encoder.png, id=166, 1272.755pt x 571.13374pt>
+<pic/auto_encoder.png, id=171, 1272.755pt x 571.13374pt>
 File: pic/auto_encoder.png Graphic file (type png)
 <use pic/auto_encoder.png>
-Package pdftex.def Info: pic/auto_encoder.png  used on input line 350.
+Package pdftex.def Info: pic/auto_encoder.png  used on input line 385.
 (pdftex.def)             Requested size: 261.0pt x 117.11803pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 350--351
+Overfull \hbox (9.0pt too wide) in paragraph at lines 385--386
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pic/our_models.png, id=167, 1254.6875pt x 710.655pt>
-File: pic/our_models.png Graphic file (type png)
-<use pic/our_models.png>
-Package pdftex.def Info: pic/our_models.png  used on input line 361.
-(pdftex.def)             Requested size: 417.6016pt x 236.5338pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (2.94379pt too wide) in paragraph at lines 366--367
-\OT1/cmr/m/n/10 ing, only the the weights of LSTM auto-encoder are trained.
- []
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.367 \section{Evaluation}
-                           <./pic/Correlation_Matrix.png>]
-Overfull \hbox (10.77817pt too wide) in paragraph at lines 375--376
+l.391 
+       <./pic/Correlation_Matrix.png>]
+<pic/our_models.png, id=185, 1254.6875pt x 710.655pt>
+File: pic/our_models.png Graphic file (type png)
+<use pic/our_models.png>
+Package pdftex.def Info: pic/our_models.png  used on input line 396.
+(pdftex.def)             Requested size: 417.6016pt x 236.5338pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.94379pt too wide) in paragraph at lines 401--402
+\OT1/cmr/m/n/10 ing, only the the weights of LSTM auto-encoder are trained.
+ []
+
+
+Overfull \hbox (10.77817pt too wide) in paragraph at lines 413--414
 []\OT1/cmr/m/n/10 In the pre-training pro-ce-dure We use mini-batch stochcasti
  []
 
 
-Overfull \hbox (0.63928pt too wide) in paragraph at lines 378--380
+Overfull \hbox (0.63928pt too wide) in paragraph at lines 416--418
 []\OT1/cmr/m/n/10 We com-pare our model with other base-line model which
  []
 
-/media/ziyan/DATA/work/main.tex:388: Missing { inserted.
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419   \item f
+               eed-foward neural networkpdfTeX warning (ext4): destination with
+ the same identifier (name{figure.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419   \item f
+               eed-foward neural networkpdfTeX warning (ext4): destination with
+ the same identifier (name{figure.10}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419   \item f
+               eed-foward neural network <./pic/lstm_cell.png> <./pic/tanh.png>
+ <./pic/auto_encoder.png>]
+/media/ziyan/DATA/work/main.tex:426: Missing { inserted.
 <to be read again> 
                    ^
-l.388 ...dent measure. Specifically, assuming $y^'
+l.426 ...ent measures. Specifically, assuming $y^'
                                                   $ is the target at time t ...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
-/media/ziyan/DATA/work/main.tex:388: Missing } inserted.
+/media/ziyan/DATA/work/main.tex:426: Missing } inserted.
 <inserted text> 
                 }
-l.388 ...ent measure. Specifically, assuming $y^'$
+l.426 ...nt measures. Specifically, assuming $y^'$
                                                    is the target at time t a...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/media/ziyan/DATA/work/main.tex:400: Missing { inserted.
-<to be read again> 
-                   ^
-l.400 ...}\times\left| \frac{y^{'}{_t}-y_t}{y^'_t}
-                                                   \right|
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-/media/ziyan/DATA/work/main.tex:400: Missing } inserted.
-<inserted text> 
-                }
-l.400 ...\left| \frac{y^{'}{_t}-y_t}{y^'_t} \right
-                                                  |
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -896,21 +876,21 @@ my insertion and my current dilemma will both disappear.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 403.
+               Default added (so using `tbp') on input line 438.
 
-<pic/lstm_auto_encoder_result.png, id=180, 1174.3875pt x 224.84pt>
+<pic/lstm_auto_encoder_result.png, id=199, 614.295pt x 606.265pt>
 File: pic/lstm_auto_encoder_result.png Graphic file (type png)
 <use pic/lstm_auto_encoder_result.png>
 Package pdftex.def Info: pic/lstm_auto_encoder_result.png  used on input line 4
-37.
-(pdftex.def)             Requested size: 417.6016pt x 79.95084pt.
+72.
+(pdftex.def)             Requested size: 417.6016pt x 412.14374pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pic/result.png, id=181, 1169.36874pt x 616.3025pt>
+<pic/result.png, id=200, 1169.36874pt x 616.3025pt>
 File: pic/result.png Graphic file (type png)
 <use pic/result.png>
-Package pdftex.def Info: pic/result.png  used on input line 444.
+Package pdftex.def Info: pic/result.png  used on input line 479.
 (pdftex.def)             Requested size: 417.6016pt x 220.09137pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -918,27 +898,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) 
-has been already used, duplicate ignored
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.11})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.455 
-       <./pic/auto_encoder.png>] [8pdfTeX warning (ext4): destination with the 
-same identifier (name{figure.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.463 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.463 
+l.490 
        <./pic/our_models.png>]
-/media/ziyan/DATA/work/main.tex:465: Misplaced alignment tab character &.
-l.465 ...sed on Cloud-Fog Hybrid Computing Model &
+/media/ziyan/DATA/work/main.tex:500: Misplaced alignment tab character &.
+l.500 ...sed on Cloud-Fog Hybrid Computing Model &
                                                    Grant No. 61572137-Multip...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -948,12 +916,12 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (0.23662pt too wide) in paragraph at lines 465--466
+Overfull \hbox (0.23662pt too wide) in paragraph at lines 500--501
 \OT1/cmr/m/n/10 ral Sci-ence Foun-da-tion of China un-der Grant No.61728202-
  []
 
 
-Overfull \hbox (2.04218pt too wide) in paragraph at lines 465--466
+Overfull \hbox (2.04218pt too wide) in paragraph at lines 500--501
 \OT1/cmr/m/n/10 2016 In-no-va-tion Ac-tion Project un-der Grant 16DZ1100200-
  []
 
@@ -981,19 +949,7 @@ Underfull \hbox (badness 1028) in paragraph at lines 41--46
 Missing character: There is no â in font cmr8!
 Missing character: There is no € in font cmr8!
 Missing character: There is no “ in font cmr8!
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) 
-has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.69 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.69 
-      <./pic/lstm_auto_encoder_result.png> <./pic/result.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 77--81
 \OT1/cmr/m/n/8 URL []$\OT1/cmtt/m/n/8 https : / / www . researchgate . net / pr
 ofile /
@@ -1020,7 +976,13 @@ Overfull \hbox (64.47662pt too wide) in paragraph at lines 77--81
 tion-[]in-[]Time-[]Series .
  []
 
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
+as been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.81 
+     ]
 Underfull \hbox (badness 1552) in paragraph at lines 87--94
 []\OT1/cmr/m/n/8 J. Schmid-hu-ber, []A lo-cal learn-ing al-go-rithm for dy-nami
 c
@@ -1058,24 +1020,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--130
 m ? doid = 3127479 .
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 471.
- [10
-/media/ziyan/DATA/work/main.tex:471: pdfTeX error (ext4): \pdfendlink ended up 
-in different nesting level than \pdfstartlink.
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
+) has been already used, duplicate ignored
+
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.471 \end{document}
+l.156 
+       <./pic/lstm_auto_encoder_result.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.506 \end{document}
                     
 
- 
+ <./pic/result.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 506.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C43149A6E38DFF332787B60F8057CD94;1211.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 506.
+ ) 
 Here is how much of TeX's memory you used:
- 7731 strings out of 492980
- 113047 string characters out of 6129239
- 225695 words of memory out of 5000000
- 11108 multiletter control sequences out of 15000+600000
+ 7757 strings out of 492980
+ 113409 string characters out of 6129239
+ 222844 words of memory out of 5000000
+ 11127 multiletter control sequences out of 15000+600000
  10237 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,17n,30p,1391b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
-/media/ziyan/DATA/work/main.tex:471:  ==> Fatal error occurred, no output PDF f
-ile produced!
+ 32i,17n,30p,1391b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
+</media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></media/ziyan/DATA/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></media/ziyan/DATA/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></media/ziyan/DATA/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></media/ziyan/DATA/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></media/ziyan/DATA/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></media/ziyan/D
+ATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></media/zi
+yan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></med
+ia/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+8.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt8.pfb>
+Output written on main.pdf (11 pages, 1266106 bytes).
+PDF statistics:
+ 451 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+
