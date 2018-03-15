@@ -20,7 +20,7 @@
 
 \bibliographystyle{elsarticle-num}
 %%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\dabiaolv}{reach rate}
+\newcommand{\dabiaolv}{reach rate }
 
 
 \begin{document}
@@ -106,13 +106,13 @@ The remain organization of this paper is as follows. In Section 2, we first intr
     \label{fig: the structure of PoP}
 \end{figure}
 
-A content delivery network or content distribution network (CDN) (figure \ref{fig:CDN}) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multi-media content to the clients, based on the locations of the clients and cache servers nearby the clients. The basic working procedure is as follows. Step 1: client send a request to local dns. Step 2: the DNS finds the CNAME and redirects the request to the gslb (global sever load balance). Step 3: the local DNS server sends request to the glsb and glsb returns the ip address of CDN servers based on the scheduling policy. Step 4: the local DNS return the ip address to the clients. Step 5: clients make a request to fetch content from the selected PoP. Step 6: the cache server groups will pull the content from source website if the content doesn't exsist locally. Step 7: content is sent to the clients.
+A content delivery network or content distribution network (CDN) (figure \ref{fig:CDN}) is a geographically distributed network of cache servers. CDN helps content provider deliver web pages and other multimedia content to the clients, based on the locations of the clients and cache servers nearby the clients. The basic working procedure is as follows. Step 1: client sends a request to local DNS. Step 2: the DNS finds the CNAME and redirects the request to the GSLB (global sever load balance). Step 3: the local DNS server sends a request to the GSLB and GSLB returns the ip address of CDN servers based on the scheduling policy. Step 4: the local DNS return the ip address to the clients. Step 5: clients request to fetch content from the selected PoP. Step 6: the cache server groups will pull the content from source website if the content doesn't exist locally. Step 7: content is sent to the clients.
 
-A CDN cache server group (figure \ref{fig: the structure of PoP}) is the basic resource scheduling unit for CDN. A CDN cache group is a load balanced cluster that consists of interconnected cache servers. A typical implementation consists of HAproxy and squid servers. The requests from clients are distributed by HAproxy to cache servers. HAproxy use be set to use different algorithms algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server in a homogenours cluster. In heterogeneous cluster, weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous structure of a cluster adds complexity to the feature engineering.
+A CDN cache server group (figure \ref{fig: the structure of PoP}) is the basic resource scheduling unit for CDN. A CDN cache group is a load balanced cluster that consists of interconnected cache servers. A typical implementation consists of HAproxy and squid servers. HAproxy distributes the requests from clients to cache servers. HAproxy can be set to use different algorithms to maximize the utilization of every server. Round-robin algorithm distributes the load equally to each server in a homogenous cluster. In a heterogeneous cluster, weighted round-robin algorithm is used. A weight was assigned to the server based on its processing capabilities. A heterogeneous structure of a cluster adds complexity to the feature engineering.
 
-As CDN providers don't have direct QoS measurement from the clients (the logs from video players, web browser that can show the QoE), so they use the indirect measurement \dabiaolv which is calculated from log of the HA proxy of CDN cache groups with a delay about three minutes. 
+As CDN providers do not have direct QoS measurement from the clients (the logs from video players, web browsers that can show the QoE), so they use the measurement \dabiaolv. They calculated \dabiaolv from log of the HA proxy of CDN cache groups with a delay about three minutes.  
 
-The number of metrics we collected from the cache servers of cache group are different due to the different configuration, from 64 to 134. The features we have constructed are listed in table. There are about 312 features. They include cpu utilization, network utilization, disk utilization, memory utilization and so on.
+The number of metrics we collected from the cache servers of cache group are different due to the different configuration, from 64 to 134. We listed the features we constructed in Table \ref{feature_list}. There are about 312 features. They include cpu utilization, network utilization, disk utilization, memory utilization and so on.
 
 \begin{table}[]
 \centering
@@ -173,35 +173,35 @@ aggregate.all.resptime\\
 ...\\
 \hline
 \end{tabular}
-\caption{list of candidate input features from one cache server group. We organize the features into groups. The first group is the raw data we directly collected from the caching servers. The second group are the features we construct based on statistics of the metrics of a single cache server. The third group are the features we construct based on the statistics of the metrics of the whole cache server groups}
-\label{my-label}
+\caption{List of candidate input features from one cache server group. We organize the features into groups. The features in the first group from the raw data we directly collected from the caching servers. The features of the second group are what we construct based on statistics of the metrics of a single cache server. The features of third group are what we construct based on the statistics of the metrics of the whole cache server groups}
+\label{feature_list}
 \end{table}
 
 \section{Problem Formulation and Models}
-We argue that performance evaluation as a sequence learning problem. Since we are able to collect the caching servers performance metrics and network metrics at a certain time interval, we can use a sequence models to describe relationship between metrics collected from  cache groups and \dabiaolv
+We argue that performance evaluation as a sequence learning problem. Since we can collect the caching servers performance metrics and network metrics at time intervals of one minute, we can use a sequence models to describe the relationship between metrics collected from cache groups and \dabiaolv.
 
 There are three categories of sequence learning problem, which are many to many, one to many and many to one. Our goal is to model the relationship between a sequence collected metrics and \dabiaolv within a certain period of time, which is many to one. In general, we can use the following formulation to describe the prediction process.
 
-Giving a sequence of vectors, $\{x_n\}=\{x_{\alpha} \in R^{d}|\alpha \in N\}, $ , where $d$ is the number of the features, we use $\{x_n\}$ to represent the sequence and $x_t$ to describe a data point at time t with $d$ dimensions.
+Giving a sequence of vectors, $\{x_n\}=\{x_{\alpha} \in R^{d}|\alpha \in N\}$, where $d$ is the number of the features, we use $\{x_n\}$ to represent the sequence and $x_t$ to describe a data point at time t with $d$ dimensions.
 
 Given another target sequence, $\{y_n\}=\{y_{\alpha} \in R|\alpha \in N\}$, our goal is to find the relation between$\{x_n\}$ and $\{y_n\}$, which is 
 $$y_t=f(x_{t},x_{t-1},...,x_{t-n+1})$$
 where $n$ is the window size and $f$ is the mapping we want to learn from the data.
 
-Many models can be used to approximate $f$ in sequence modeling. The most naive way is to use simple heuristics, which is use exponential moving average to linearly map each metrics to a score in a certain time interval. The paremeters are depending on the experience of the operators. This methods are impractical: the model can hardly generalize well and requires tedious repetitive tuning.
+Many models can be used to approximate $f$ in sequence modeling. The most naive way is to use simple heuristics, which is use an exponential moving average to linearly map each metrics to a score in a certain time interval. The parameters are depending on the experience of the operators. This method is impractical: it can hardly generalize well and requires tedious repetitive tuning.
 
 \subsection{Linear Models for Sequence Learning}
 
-There are some conventional approaches which use data to learn: use the multiple linear regression model(MLR). The MLR method builds a model of a sequence that is composed of a linear part and a random noise part. The linear part models the linear relationship between the dependent variables and independent variables, the random noise reflects the unpredictable randomness. Formally, the model for multiple linear regression, given n observations, is 
+There are some conventional approaches which use data to learn such as using the multiple linear regression model (MLR). The MLR method builds a model of a sequence that is composed of a linear part and a random noise part. The linear part models the linear relationship between the dependent variables and independent variables, the random noise reflects the unpredictable randomness. Formally, the model for multiple linear regression, given n observations, is 
     $$y_t = c+\sum_{i=t-n+1}^{t}(\beta_i ∗ x_{t_i})+\epsilon_t$$
 
-Furthermore, the linear part incorporates historical values of the sequence. y represents the target we want to model. c represents the constant parameter of the linear decomposition, $\beta$ represents the parameters to be computed and epsilon reflects the random noise part. The best-fitting line for the observed data is calculated by the least square method.
+Furthermore, the linear part incorporates historical values of the sequence. $y$ represents the target we want to model. $c$ represents the constant parameter of the linear decomposition, $\beta$ represents the parameters to be computed and epsilon reflects the random noise part. The best-fitting line for the observed data is calculated by the least square method.
 
-Linear models are easy to implement and have good interpretation and thus are widely used in many real work. However, linear models are shown not sufficient to describe some nonlinear behaviors of the complex network systems. In many cases, neural networks tend to outperform linear models. In our experiments, we observe a non-linear relationship between the metrics and \dabiaolv.
+Linear models are easy to implement and have good interpretation and thus are widely used in much real works. However, linear models are shown not sufficient to describe some nonlinear behaviors of the complex network systems. In many cases, neural networks tend to outperform linear models. In our experiments, we observe a non-linear relationship between the metrics and \dabiaolv.
 
 \subsection{Non-linear for Sequence Learning}
 
-Deep learning has many applications in sequence learning. Deep learning is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network (ANN) architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequence modeling. Compared to other machine learning techniques, it can detect complex relationships among features, can extract hierarchical level of features from raw data. So it can produce more accurate result and build a model more accurate with less time. They are advantageous for modeling intricate systems because neural networks do not require the user to predefine the feature interactions in the model, which assumes relationships within the data. Instead, the neural network searches for patterns and interactions between features to automatically generate a best fit model.
+Deep learning has many applications in sequence learning. Deep learning is a branch of machine learning based on a set of algorithms that attempts to model high-level abstractions in data by using artificial neural network (ANN) architectures composed of multiple non-linear transformations. They have a lot of successful applications in sequence modeling. Compared to other machine learning techniques, it can detect complex relationships among features, can extract a hierarchical level of features from raw data. So it can build a model more accurate with less time. They are advantageous for modeling intricate systems because neural networks do not require the user to predefine the feature interactions in the model, which assumes relationships within the data. Instead, the neural network searches for patterns and interactions between features to automatically generate the best fit model.
 
 
 \subsubsection{Feed Forward Neural Network}
@@ -212,7 +212,7 @@ Deep learning has many applications in sequence learning. Deep learning is a bra
     \label{fig:RNN}
 \end{figure}
 
-A generic three layered neural network is illustrated in Figure 2. In this study, the input matrix $I \in R^{M\times(N\timesT+1)}$  where M is the number of training examples and $N\timesT+1$ is the number of features (metrics that collected from the cache servers) concatenating the bias term. The input matrix is then multiplied by the model parameters matrix $W_1$ to produce the hidden state matrix $h$. The Output of the first layer is transformed by an activation function. We can add more layers to the network. The size and number of hidden layers can be varied to model systems of varying complexity. The whole process can be imagined as the information propagating forward. The forward propagation is formalized as follows:
+A generic three-layered neural network is illustrated in Figure 2. In this study, the input matrix $I \in R^{M\times(N\timesT+1)}$  where M is the number of training examples and $N\timesT+1$ is the number of features (metrics that collected from the cache servers) concatenating the bias term. The input matrix is then multiplied by the model parameters matrix $W_1$ to produce the hidden state matrix $h$. The output of the first layer is transformed by an activation function. We can add more layers to the network. The size and number of hidden layers can be varied to model systems of varying complexity. The whole process can be imagined as the information propagating forward. We can formalize the forward propagation as follows:
 
 \begin{equation}
     \begin{split}
@@ -236,16 +236,16 @@ where sigmoid is the activation function:
     \label{fig:sigmoid}
 \end{figure}
 
-the loss function $J$ use mean square error:
+the loss function $J$ uses mean square error:
     $$J=\frac{1}{n}\times{\sum_{t=1}^N(y^{'}{_t}-y_t})^2$$
 
 The process of training any neural network model can be broken down into four steps: (1) Randomly initialize the model parameters, (2) forward propagation algorithm,(3) Compute the cost function $J$, (4) back propagate using the chain rule  (5) using the gradients calculated, adjust weights to minimize the cost function $J$.
 
-One major assumption for NNs is the independence of samples. For sequence learning problem, however, this assumption doesn't hold true, for the samples of our problem have a temporal relationship: the status of system of the next timestep not only depends on the status in the current timestep but also on the previous timesteps of indefinite length. One solution is to using a sliding window to capture the sequential relationship between the samples. The performance of this method depends on the window size, which isn't pratical for the dependencies length which isn't a fixed value. RNN eliminates the need to find the size of the window\cite{HermansTrainingNetworks}. 
+One major assumption for NNs is the independence of samples. For sequence learning problem, however, this assumption doesn't hold true, for the samples of our problem have a temporal relationship: the status of the system of the next timestep not only depends on the status in the current timestep but also on the previous timesteps of indefinite length. One solution is to use a sliding window to capture the sequential relationship between the samples. The performance of this method depends on the window size, which isn't practical for the dependencies length which isn't a fixed value. RNN eliminates the need to find the size of the window\cite{HermansTrainingNetworks}. 
 
 \subsubsection{RNN}
 
-One of the more popular kind of deep neural networks is the Recurrent Neural Network (RNN). RNNs are a class of neural networks that depends on the sequential nature of their inputs. Such inputs could be text, speech, time series, and anything else in which the occurrence of an element in the sequence is dependent on the elements that appeared before it. The promise of recurrent neural networks is that the temporal dependence and contextual information in the input data can be learned\cite{Bengio1994LearningDifficult} \cite{ChoLearningTranslation}. 
+RNNs are a class of neural networks that depend on the sequential nature of their inputs. Such inputs could be text, speech, time series, and anything else in which the occurrence of an element in the sequence is dependent on the elements that appeared before it. The promise of recurrent neural networks is that the temporal dependence and contextual information in the input data can be learned\cite{Bengio1994LearningDifficult} \cite{ChoLearningTranslation}. 
 
 RNNs \ref{fig:RNN} process the input sequence one element at a time and maintain a hidden
 state vector which acts as a memory for past information. They learn to selectively retain relevant information allowing them to capture dependencies across several time steps. This allows them to utilize both current input and past information while making future predictions. All this is learned by the model automatically without much knowledge of the cycles or time dependencies in data. RNNs obviate the need for a fixed size time window and can also handle variable length sequences. Moreover, the number of states that can be represented by an NN is exponential in the number of nodes.
@@ -277,7 +277,7 @@ where $f$ can be fully connected layer that linearly maps the hidden state to an
 	\mathbf h_t^{l} = \sigma(\mathbf W * \mathbf h_{t-1}^{l} + \mathbf I * \mathbf h_t^{l-1}).
 \end{equation}
 
-The training of RNN use back-propagation through time (BPTT). RNN have several drawbacks: 1. Training vanilla RNNs is known to be particularly difficult, with vanishing and exploding gradients being one possible explanation \cite{Bengio1994LearningDifficult}. 2. RNN aren't capable of learning long-term dependencies. LSTM address these issues by introducing LSTM cell\cite{Hochreiter1997LongMemory} 
+The training of RNNs uses back-propagation through time (BPTT). RNNs have several drawbacks: 1. Training vanilla RNNs is known to be particularly difficult, with vanishing and exploding gradients being one possible explanation \cite{Bengio1994LearningDifficult}. 2. RNNs aren't capable of learning long-term dependencies. LSTM address these issues by introducing LSTM cell\cite{Hochreiter1997LongMemory} 
 
 
 \section{Methods}
@@ -287,7 +287,7 @@ The feature engineering is the process after data-cleansing, in which we fill th
 The metrics collected are in the granularity of caching servers which have different dimensionality. As showed in graph. To make things more complex, a cache group may have different number caching servers. As we only care about. 
 (2) reduce the dimensionality, for it is very time-consuming to train the models when the number of dimensionality is too high.
 
-Our feature engineering has three steps: 1. data prepossessing which converts raw data into high-dimensional vectors. 2. feature correlation that characterize the linear relationship between every pair of features. 3. cluster analysis that selects the set of features.
+Our feature engineering has three steps: 1. data prepossessing which converts raw data into high-dimensional vectors. 2. feature correlation analysis that characterizes the linear relationship between every pair of features. 3. cluster analysis that selects the set of features.
 
 \begin{figure}[h]
     \centering
@@ -296,13 +296,13 @@ Our feature engineering has three steps: 1. data prepossessing which converts ra
     \label{fig:Correlation_matrix}
 \end{figure}
 
-As there are hundreds of features, there are many overlaps among the variables. We use correlation in statistics to group highly correlated variables together and create composite features that can represent each group of variables.
+As there are hundreds of features, there are many overlaps among the variables. We use correlation in statistics to group highly correlated variables and create composite features that can represent each group of variables.
 
-Correlation is an analysis of two or more observed or random variables to determine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behaviour of the second variable. The Pearson’s correlation defines this dependence in the interval between -1 and 1. Pearson’s correlation for two given random variables X and Y is computed by dividing the covariance of both variables with the product of their standard deviations.
+Correlation is an analysis of two or more observed or random variables to determine a dependence between the variables. This dependence can be classified as the probability that changes in one variable affect the behavior of the second variable. The Pearson’s correlation defines this dependence in the interval between -1 and 1. Pearson’s correlation for two given random variables X and Y are computed by dividing the covariance of both variables with the product of their standard deviations.
 
 Generally, cases of high correlation compute to a value close to 1.0, high anticorrelation is associated with a value close to -1.0 and no correlation is assumed. if the value is around 0.0, the variables appear to be linearly independent. 
 
-The correlation matrix we calculate is pictured in figure \ref{fig:Correlation_matrix}. The white color denotes the correlation of 1.0 and the black denotes -1.0. The red denotes that there is no linear relationship at all. As we can see from the picture that there are overlaps among the features.
+The correlation matrix we calculate is pictured in figure \ref{fig:Correlation_matrix}. The white color denotes the correlation of 1.0 and the black denotes -1.0. The red denotes that there is no linear relationship at all. As we can see from the picture, there are overlaps among the features.
 
 \begin{figure}[h]
     \centering
@@ -311,7 +311,7 @@ The correlation matrix we calculate is pictured in figure \ref{fig:Correlation_m
     \label{fig:Correlation_matrix}
 \end{figure}
 
-After we calculate the correlation matrix for all the features, the correlation of thses features are regarded as distance. Then, we use DBSCAN to cluster these features to eliminate close ones. By defining the neighorhood parameter $\epsilon$, we specify how much extent we regard two features as close. If a feature is highly correlated with another one, we should add these features into the same cluster. When the clustering is done, we choose the representative feature from the cluster. We formulate the process in Algorithm 1.
+After we calculate the correlation matrix for all the features, the correlations of these features are regarded as distance. Then, we use DBSCAN to cluster these features to eliminate close ones. By defining the neighborhood parameter $\epsilon$, we specify how much extent we regard two features as close. If a feature is highly correlated with another one, we should add these features into the same cluster. When the clustering is done, we choose the representative feature from the cluster. We formulate the process in Algorithm 1.
 
 \begin{algorithm}[t]
 \caption{Feature Clustering and Selection} 
@@ -356,10 +356,10 @@ After we calculate the correlation matrix for all the features, the correlation 
 
 \subsection{Prediction Model Design}
 
-In this section, we introduce how the architecture we use to predict \dabiaolv of CDN cache group using the data output from the feature engineering stage. The key components of our model are LSTM, LSTM auto-encoder and deep feed foward neural network.
+In this section, we introduce how the architecture we use to predict \dabiaolv of CDN cache group using the data output from the feature engineering stage. The key components of our model are LSTM, LSTM auto-encoder, and deep feed foward neural network.
 
 \subsubsection{LSTM}
-LSTM, introduced in \cite{Hochreiter1997LongMemory}, addresses the problem of vanishing gradients by introducing a memory cell. \cite{MalhotraLongSeries} applied in time series. The innere working of LSTM(figure \ref{fig:LSTMCELL}) are listed follows:
+LSTM, introduced in \cite{Hochreiter1997LongMemory}, addresses the problem of vanishing gradients by introducing a memory cell. \cite{MalhotraLongSeries} applied in time series. The inner working of LSTM(figure \ref{fig:LSTMCELL}) are listed follows:
 
 \begin{equation}
 	\begin{split}
@@ -408,15 +408,15 @@ Prior to fitting the data prediction model, we first conduct a pre-training step
     \label{fig:our_models}
 \end{figure*}
 
-As illustrated in figure \ref{fig:our_models}. Given a multi-variate time series of data, the encoder reads the vectors as input and transform them as latent variables. During the pretraining, only the the weights of LSTM auto-encoder are trained. The LSTM auto-encoder is trained to reconstruct the input on the output side. 
+As illustrated in figure \ref{fig:our_models}. Given a multivariate time series of data, the encoder reads the vectors as input and transform them as latent variables. During the pretraining, only the weights of LSTM auto-encoder are trained. The LSTM auto-encoder is trained to reconstruct the input on the output side. 
 
-In the second step, a fully connected feed foward network take the latent variables which are the ouputs of the encoder as input. We take the latent variables that learn variable as tranining set and \dabiaolv as the targets and use the gradient descent to train the network. We use 9/10 of the data as training set and 1/10 of the data as test set.
+In the second step, a fully connected feed foward network take the latent variables which are the outputs of the encoder as input. We take the latent variables as training set and \dabiaolv as the targets and use the gradient descent to train the network. We use 9/10 of the data as training set and 1/10 of the data as test set.
 
 \section{Evaluation}
 \subsection{Experimental Settings and Dataset}
 Our implementation uses the Google opensource deep learning library, Tensorflow\cite{TensorFlow}, version 1.2.0. We ran our experiments on a physical machine running an Ubuntu 16.04 operation system, intel i7-6700HQ, 16 GB memory, and GPU gtx1060.
 
-To test the performance, we select two cache groups with average request above 7000 per minute. The first cache servers groups have 13 cache servers while the other have 10 cache servers. The  metrics are raw data collected from the cache servers, including cpu utilization, network utilization, disk utilization, memory utilization of two cache group servers. The frequency of the metrics and  \dabiaolv are both minute-by-minute. This data covers the period from December 20, 2017 to January 26, 2018.
+To test the performance, we select two cache groups with average request above 7000 per minute. The first cache servers groups have 13 cache servers while the other has 10 cache servers. The metrics are raw data collected from the cache servers, including CPU utilization, network utilization, disk utilization, memory utilization of two cache group servers. The frequency of the metrics and \dabiaolv are both minute-by-minute. This data covers the period from December 20, 2017 to January 26, 2018.
 
 In the experiments, 5-fold cross validation is used to evaluate the accuracy of predictions. This divides the entire data set into 5 equal parts.  Prediction is repeated 5 times, each time keeping one of the 1 parts as test data and the other 4 parts as training data to build the prediction model. Finally, test results on all the 5 parts are accumulated together to calculate the average prediction accuracy.
 
@@ -504,7 +504,7 @@ There are extensive research regarding CDN, for a large portion of internet traf
 
 In this paper we present a data-driven approach to evaluate the performance of cache server groups. The lstm auto-encoder can capture the long-term temporal information in the sequences. This paper shows that it is feasible to apply state-of-the-art deep learning techniques to model networked systems that provides estimation for its performance. The empirical studies shows that ours has outperformed the conventional methods.
 
-There are hundreds of cache group in China. Although our method can be used to train on all kinds of cache group of different structure, the trained model is for one specific cache group. A unified model for all kinds of cache groups is required. As qualified rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relationship changes over time.
+There are hundreds of cache groups in China. Although our method can be used to train on all kinds of cache group of different structures, the trained model is for one specific cache group. A unified model for all kinds of cache groups is required. As the reach rate is an indirect measurement of QoS of clients, collecting data from clients ends will provide useful insights. We also want to develop the online training methods for our models because we observe that the relation between sensors and the reach rate changes over time.
 
 \section{Acknowledgment}
 The work of this paper is supported by National Natural Science Foundation of China under Grant No.61728202-Research on Internet of Things Big Data Transmission and Processing Architecture based on Cloud-Fog Hybrid Computing Model & Grant No. 61572137-Multiple Clouds based CDN as a Service Key Technology Research, and Shanghai 2016 Innovation Action Project under Grant 16DZ1100200-Data-trade-supporting Big Data Testbed.

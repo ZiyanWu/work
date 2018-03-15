@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.22)  31 JAN 2018 02:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.22)  15 MAR 2018 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -354,9 +354,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 
 LaTeX Warning: Label `fig:Correlation_matrix' multiply defined.
 
-
-LaTeX Warning: Label `my-label' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -521,11 +518,6 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 104--105
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (0.96332pt too wide) in paragraph at lines 111--112
-\OT1/cmr/m/n/10 and squid servers. The re-quests from clients are dis-tributed
- []
-
 [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
@@ -582,6 +574,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
+Overfull \hbox (6.33371pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 the re-la-tion-ship be-tween met-rics col-lected from cache gro
+ups
+ []
+
+
 Overfull \hbox (0.47256pt too wide) in paragraph at lines 195--196
 []\OT1/cmr/m/n/10 There are some con-ven-tional ap-proaches which use data
  []
@@ -608,7 +606,7 @@ Overfull \hbox (8.27827pt too wide) in paragraph at lines 204--205
  (ANN)
  []
 
-<pic/mlp.png, id=138, 760.8425pt x 651.43375pt>
+<pic/mlp.png, id=139, 760.8425pt x 651.43375pt>
 File: pic/mlp.png Graphic file (type png)
 <use pic/mlp.png>
 Package pdftex.def Info: pic/mlp.png  used on input line 210.
@@ -639,7 +637,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<pic/sigmoid.png, id=139, 357.335pt x 238.8925pt>
+<pic/sigmoid.png, id=140, 357.335pt x 238.8925pt>
 File: pic/sigmoid.png Graphic file (type png)
 <use pic/sigmoid.png>
 Package pdftex.def Info: pic/sigmoid.png  used on input line 234.
@@ -662,7 +660,7 @@ l.243
                                                   \fi \fi 
 l.243 
        <./pic/mlp.png> <./pic/sigmoid.png>]
-<pic/RNN.png, id=157, 1094.0875pt x 610.28pt>
+<pic/RNN.png, id=158, 1094.0875pt x 610.28pt>
 File: pic/RNN.png Graphic file (type png)
 <use pic/RNN.png>
 Package pdftex.def Info: pic/RNN.png  used on input line 256.
@@ -681,7 +679,7 @@ Overfull \hbox (13.05594pt too wide) in paragraph at lines 285--289
 sing,
  []
 
-<pic/feature_engineering.png, id=160, 1296.845pt x 531.9875pt>
+<pic/feature_engineering.png, id=161, 1296.845pt x 531.9875pt>
 File: pic/feature_engineering.png Graphic file (type png)
 <use pic/feature_engineering.png>
 Package pdftex.def Info: pic/feature_engineering.png  used on input line 294.
@@ -707,7 +705,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.302 
        <./pic/RNN.png>]
-<pic/Correlation_Matrix.png, id=175, 804.00375pt x 807.015pt>
+<pic/Correlation_Matrix.png, id=176, 804.00375pt x 807.015pt>
 File: pic/Correlation_Matrix.png Graphic file (type png)
 <use pic/Correlation_Matrix.png>
 Package pdftex.def Info: pic/Correlation_Matrix.png  used on input line 309.
@@ -788,7 +786,7 @@ l.373 \end{equation}
 l.373 \end{equation}
                      <./pic/feature_engineering.png> <./pic/Correlation_Matrix.
 png>]
-<pic/lstm_cell.png, id=190, 550.055pt x 352.31625pt>
+<pic/lstm_cell.png, id=191, 550.055pt x 352.31625pt>
 File: pic/lstm_cell.png Graphic file (type png)
 <use pic/lstm_cell.png>
 Package pdftex.def Info: pic/lstm_cell.png  used on input line 377.
@@ -798,7 +796,7 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 377--378
  [][] 
  []
 
-<pic/tanh.png, id=191, 357.335pt x 238.8925pt>
+<pic/tanh.png, id=192, 357.335pt x 238.8925pt>
 File: pic/tanh.png Graphic file (type png)
 <use pic/tanh.png>
 Package pdftex.def Info: pic/tanh.png  used on input line 384.
@@ -816,7 +814,7 @@ Overfull \hbox (6.25592pt too wide) in paragraph at lines 389--390
 ]$
  []
 
-<pic/auto_encoder.png, id=192, 1272.755pt x 571.13374pt>
+<pic/auto_encoder.png, id=193, 1272.755pt x 571.13374pt>
 File: pic/auto_encoder.png Graphic file (type png)
 <use pic/auto_encoder.png>
 Package pdftex.def Info: pic/auto_encoder.png  used on input line 395.
@@ -829,18 +827,13 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 395--396
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pic/our_models.png, id=194, 1254.6875pt x 710.655pt>
+<pic/our_models.png, id=195, 1254.6875pt x 710.655pt>
 File: pic/our_models.png Graphic file (type png)
 <use pic/our_models.png>
 Package pdftex.def Info: pic/our_models.png  used on input line 406.
 (pdftex.def)             Requested size: 417.6016pt x 236.5338pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (2.94379pt too wide) in paragraph at lines 411--412
-\OT1/cmr/m/n/10 ing, only the the weights of LSTM auto-encoder are trained.
- []
 
 [7pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
 has been already used, duplicate ignored
@@ -895,7 +888,7 @@ my insertion and my current dilemma will both disappear.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 448.
 
-<pic/lstm_auto_encoder_result.png, id=211, 614.295pt x 606.265pt>
+<pic/lstm_auto_encoder_result.png, id=212, 614.295pt x 606.265pt>
 File: pic/lstm_auto_encoder_result.png Graphic file (type png)
 <use pic/lstm_auto_encoder_result.png>
 Package pdftex.def Info: pic/lstm_auto_encoder_result.png  used on input line 4
@@ -904,7 +897,7 @@ Package pdftex.def Info: pic/lstm_auto_encoder_result.png  used on input line 4
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pic/result.png, id=212, 903.375pt x 304.13625pt>
+<pic/result.png, id=213, 903.375pt x 304.13625pt>
 File: pic/result.png Graphic file (type png)
 <use pic/result.png>
 Package pdftex.def Info: pic/result.png  used on input line 489.
@@ -948,7 +941,13 @@ Underfull \hbox (badness 1552) in paragraph at lines 26--33
 \OT1/cmr/m/n/8 Pad-man-ab-han, V. Sekar, E. Do-minique, M. Goliszewski,
  []
 
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
+as been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33 
+     ]
 Underfull \hbox (badness 1622) in paragraph at lines 35--39
 []\OT1/cmr/m/n/8 J. Gao, []Ma-chine Learn-ing Ap-pli-ca-tions for Data Cen-ter
  []
@@ -959,13 +958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--39
 com / media /
  []
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
-as been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.39 
-     ]
 Underfull \hbox (badness 1028) in paragraph at lines 45--50
 []\OT1/cmr/m/n/8 Y. Le-cun, Y. Ben-gio, G. Hin-ton, Deep learn-ing, Na-ture
  []
@@ -1089,10 +1082,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
- 7776 strings out of 492980
- 112863 string characters out of 6132487
- 222981 words of memory out of 5000000
- 11140 multiletter control sequences out of 15000+600000
+ 7777 strings out of 492980
+ 112877 string characters out of 6132487
+ 223438 words of memory out of 5000000
+ 11141 multiletter control sequences out of 15000+600000
  10586 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,17n,30p,1376b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1115,7 +1108,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><d:/texlive-windows/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/texlive-windows/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/texlive-windows/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (11 pages, 1257171 bytes).
+Output written on main.pdf (11 pages, 1257615 bytes).
 PDF statistics:
  480 PDF objects out of 1000 (max. 8388607)
  418 compressed objects within 5 object streams
