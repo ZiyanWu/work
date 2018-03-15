@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.22)  15 MAR 2018 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.22)  15 MAR 2018 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,8 +854,8 @@ l.420
                                                   \fi \fi 
 l.420 
        <./pic/lstm_cell.png> <./pic/tanh.png> <./pic/auto_encoder.png>]
-Overfull \hbox (10.77817pt too wide) in paragraph at lines 423--424
-[]\OT1/cmr/m/n/10 In the pre-training pro-ce-dure We use mini-batch stochcasti
+Overfull \hbox (3.50037pt too wide) in paragraph at lines 423--424
+[]\OT1/cmr/m/n/10 In the pre-training pro-ce-dure, we use mini-batch stochas-
  []
 
 
@@ -915,6 +915,10 @@ l.498
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
+
+Overfull \hbox (6.806pt too wide) in paragraph at lines 499--500
+\OT1/cmr/m/n/10 driven method is used to solve the op-ti-mal cache-deployment
+ []
 
 d:/work/main.tex:510: Misplaced alignment tab character &.
 l.510 ...sed on Cloud-Fog Hybrid Computing Model &
@@ -1088,7 +1092,7 @@ Here is how much of TeX's memory you used:
  11141 multiletter control sequences out of 15000+600000
  10586 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,17n,30p,1376b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,17n,30p,1399b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ><d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 <d:/texlive-windows/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1108,7 +1112,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><d:/texlive-windows/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><d:/texlive-windows/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><d:/texlive-windows/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (11 pages, 1257615 bytes).
+Output written on main.pdf (11 pages, 1257653 bytes).
 PDF statistics:
  480 PDF objects out of 1000 (max. 8388607)
  418 compressed objects within 5 object streams
