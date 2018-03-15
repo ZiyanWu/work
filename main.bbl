@@ -37,12 +37,24 @@ J.~Gao,
   Learning Applications for Data Center Optimization}}.
 \newline\urlprefix\url{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42542.pdf}
 
+\bibitem{Edge}
+\href{https://en.wikipedia.org/wiki/Edge_computing}{{Edge computing}}.
+\newline\urlprefix\url{https://en.wikipedia.org/wiki/Edge_computing}
+
 \bibitem{Lecun2015}
 Y.~Lecun, Y.~Bengio, G.~Hinton, {Deep learning}, Nature 521~(7553) (2015)
   436--444.
 \newblock \href {http://arxiv.org/abs/arXiv:1312.6184v5}
   {\path{arXiv:arXiv:1312.6184v5}}, \href
   {http://dx.doi.org/10.1038/nature14539} {\path{doi:10.1038/nature14539}}.
+
+\bibitem{Langkvist2014AModeling}
+M.~L{\"{a}}ngkvist, L.~Karlsson, A.~Loutfi,
+  \href{https://ac.els-cdn.com/S0167865514000221/1-s2.0-S0167865514000221-main.pdf?_tid=73b58696-de42-11e7-99f2-00000aab0f27&acdnat=1512976445_b3a701a33285bf903a86108fc3a2b956}{{A
+  review of unsupervised feature learning and deep learning for time-series
+  modeling}}\href {http://dx.doi.org/10.1016/j.patrec.2014.01.008}
+  {\path{doi:10.1016/j.patrec.2014.01.008}}.
+\newline\urlprefix\url{https://ac.els-cdn.com/S0167865514000221/1-s2.0-S0167865514000221-main.pdf?_tid=73b58696-de42-11e7-99f2-00000aab0f27&acdnat=1512976445_b3a701a33285bf903a86108fc3a2b956}
 
 \bibitem{HermansTrainingNetworks}
 M.~Hermans, B.~Schrauwen, {Training and Analyzing Deep Recurrent Neural
