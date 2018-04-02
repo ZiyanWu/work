@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  2 APR 2018 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.17)  2 APR 2018 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -857,18 +857,6 @@ Overfull \hbox (1.94487pt too wide) in paragraph at lines 504--505
 el,
  []
 
-
-LaTeX Warning: Reference `result_test_set' on page 8 undefined on input line 50
-6.
-
-
-LaTeX Warning: Reference `result_test_set' on page 8 undefined on input line 50
-6.
-
-
-LaTeX Warning: Reference `result_test_set' on page 8 undefined on input line 50
-6.
-
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -1036,17 +1024,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 529.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 529.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FF39025A6CF060F045F5DED6F94F1C44;1290.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 529.
  ) 
 Here is how much of TeX's memory you used:
- 7748 strings out of 492980
- 113163 string characters out of 6129239
+ 7747 strings out of 492980
+ 113146 string characters out of 6129239
  227973 words of memory out of 5000000
- 11117 multiletter control sequences out of 15000+600000
+ 11116 multiletter control sequences out of 15000+600000
  10418 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,17n,30p,1499b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1070,10 +1054,10 @@ ia/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 7.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti8.pfb></media/ziyan/DATA/texlive/2017/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt8.pfb>
-Output written on main.pdf (10 pages, 796887 bytes).
+Output written on main.pdf (10 pages, 796698 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
+ 477 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
  90 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
