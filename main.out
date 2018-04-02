@@ -1,19 +1,20 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
-\BOOKMARK [1][-]{section.3}{Problem Formulation and Models}{}% 3
+\BOOKMARK [1][-]{section.3}{Problem Formulation and Models Comparison}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Linear Models for Sequence Learning}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Non-linear for Sequence Learning}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Feed Forward Neural Network}{subsection.3.2}% 6
 \BOOKMARK [3][-]{subsubsection.3.2.2}{RNN}{subsection.3.2}% 7
-\BOOKMARK [1][-]{section.4}{Methods}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Feature Engineering}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Prediction Model Design}{section.4}% 10
-\BOOKMARK [3][-]{subsubsection.4.2.1}{LSTM}{subsection.4.2}% 11
-\BOOKMARK [3][-]{subsubsection.4.2.2}{LSTM auto-encoder}{subsection.4.2}% 12
-\BOOKMARK [1][-]{section.5}{Evaluation}{}% 13
-\BOOKMARK [2][-]{subsection.5.1}{Experimental Settings and Dataset}{section.5}% 14
-\BOOKMARK [2][-]{subsection.5.2}{Baseline}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.3}{Experimental Results}{section.5}% 16
-\BOOKMARK [1][-]{section.6}{Related Work}{}% 17
-\BOOKMARK [1][-]{section.7}{Conclusion and Future Work}{}% 18
-\BOOKMARK [1][-]{section.8}{Acknowledgment}{}% 19
+\BOOKMARK [2][-]{subsection.3.3}{Models Comparisons}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Methods}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Feature Engineering}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Prediction Model Design}{section.4}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.1}{LSTM}{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.2}{LSTM auto-encoder}{subsection.4.2}% 13
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Experimental Settings and Dataset}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Baseline}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Experimental Results}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Related Work}{}% 18
+\BOOKMARK [1][-]{section.7}{Conclusion and Future Work}{}% 19
+\BOOKMARK [1][-]{section.8}{Acknowledgment}{}% 20

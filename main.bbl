@@ -85,6 +85,11 @@ S.~Hochreiter, J.~Schmidhuber, {Long Short-Term Memory}, Neural Computation
 \newblock \href {http://dx.doi.org/10.1162/neco.1997.9.8.1735}
   {\path{doi:10.1162/neco.1997.9.8.1735}}.
 
+\bibitem{Ester1996A}
+M.~Ester, A density-based algorithm for discovering clusters in large spatial
+  databases with noise, Proc. 1996 Int. Conf. Knowledg Discovery and Data
+  Mining (KDD '96) (1996) 226--231.
+
 \bibitem{MalhotraLongSeries}
 P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
   \href{https://www.researchgate.net/profile/Pankaj_Malhotra3/publication/304782562_Long_Short_Term_Memory_Networks_for_Anomaly_Detection_in_Time_Series/links/5880506308ae71eb5dbfbd10/Long-Short-Term-Memory-Networks-for-Anomaly-Detection-in-Time-Series.pdf}{{Long
@@ -94,51 +99,6 @@ P.~Malhotra, L.~Vig, G.~Shroff, P.~Agarwal,
 \bibitem{TensorFlow}
 \href{https://www.tensorflow.org/}{{TensorFlow}}.
 \newline\urlprefix\url{https://www.tensorflow.org/}
-
-\bibitem{Schmidhuber1989}
-J.~Schmidhuber,
-  \href{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B1927E88DDAA6F03912D61DD23B7DABE?doi=10.1.1.51.8813{\&}rep=rep1{\&}type=pdf{\%}0Ahttp://www.tandfonline.com/doi/abs/10.1080/09540098908915650{\%}5Cnhttps://www.tandfonline.com/doi/full/10.1080/09540098908915650{\%}0Ah}{{A
-  local learning algorithm for dynamic feedforward and recurrent networks}},
-  Connection Science 1~(4) (1989) 403--412.
-\newblock \href {http://dx.doi.org/10.1080/09540098908915650}
-  {\path{doi:10.1080/09540098908915650}}.
-\newline\urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B1927E88DDAA6F03912D61DD23B7DABE?doi=10.1.1.51.8813{\&}rep=rep1{\&}type=pdf{\%}0Ahttp://www.tandfonline.com/doi/abs/10.1080/09540098908915650{\%}5Cnhttps://www.tandfonline.com/doi/full/10.1080/09540098908915650{\%}0Ah}
-
-\bibitem{Qin}
-Y.~Qin, D.~Song, H.~Chen, W.~Cheng, G.~Jiang, G.~W. Cottrell,
-  \href{http://cseweb.ucsd.edu/{~}yaq007/DA-RNN.pdf}{{A Dual-Stage
-  Attention-Based Recurrent Neural Network for Time Series Prediction}}.
-\newline\urlprefix\url{http://cseweb.ucsd.edu/{~}yaq007/DA-RNN.pdf}
-
-\bibitem{Zhu2017DeepUber}
-L.~Zhu, N.~Laptev, {Deep and Confident Prediction for Time Series at Uber}\href
-  {http://dx.doi.org/10.1109/ICDMW.2017.19} {\path{doi:10.1109/ICDMW.2017.19}}.
-
-\bibitem{Tang2017RethinkingDemands}
-G.~Tang, K.~Wu, R.~Brunner,
-  \href{http://ieeexplore.ieee.org/document/8057028/}{{Rethinking CDN design
-  with distributee time-varying traffic demands}}, in: IEEE INFOCOM 2017 - IEEE
-  Conference on Computer Communications, IEEE, 2017, pp. 1--9.
-\newblock \href {http://dx.doi.org/10.1109/INFOCOM.2017.8057028}
-  {\path{doi:10.1109/INFOCOM.2017.8057028}}.
-\newline\urlprefix\url{http://ieeexplore.ieee.org/document/8057028/}
-
-\bibitem{Zhao2017LearningNetworks}
-R.~Zhao, R.~Yan, J.~Wang, K.~Mao, {Learning to monitor machine health with
-  convolutional Bi-directional LSTM networks}, Sensors (Switzerland) 17~(2)
-  (2017) 1--18.
-\newblock \href {http://dx.doi.org/10.3390/s17020273}
-  {\path{doi:10.3390/s17020273}}.
-
-\bibitem{Yadwadkar2017SelectingClouds}
-N.~J. Yadwadkar, B.~Hariharan, J.~E. Gonzalez, B.~Smith, R.~H. Katz,
-  \href{http://dl.acm.org/citation.cfm?doid=3127479.3131614}{{Selecting the
-  <i>best</i> VM across multiple public clouds}}, in: Proceedings of the 2017
-  Symposium on Cloud Computing - SoCC '17, ACM Press, New York, New York, USA,
-  2017, pp. 452--465.
-\newblock \href {http://dx.doi.org/10.1145/3127479.3131614}
-  {\path{doi:10.1145/3127479.3131614}}.
-\newline\urlprefix\url{http://dl.acm.org/citation.cfm?doid=3127479.3131614}
 
 \bibitem{Krishnan2000}
 P.~Krishnan, D.~Raz, Y.~Shavitt, {The cache location problem}, IEEE/ACM
@@ -151,6 +111,15 @@ S.~Hasan, S.~Gorinsky, C.~Dovrolis, R.~K. Sitaraman, {Trade-offs in optimizing
   the cache deployments of CDNs}, Proceedings - IEEE INFOCOM (2014)
   460--468\href {http://dx.doi.org/10.1109/INFOCOM.2014.6847969}
   {\path{doi:10.1109/INFOCOM.2014.6847969}}.
+
+\bibitem{Tang2017RethinkingDemands}
+G.~Tang, K.~Wu, R.~Brunner,
+  \href{http://ieeexplore.ieee.org/document/8057028/}{{Rethinking CDN design
+  with distributee time-varying traffic demands}}, in: IEEE INFOCOM 2017 - IEEE
+  Conference on Computer Communications, IEEE, 2017, pp. 1--9.
+\newblock \href {http://dx.doi.org/10.1109/INFOCOM.2017.8057028}
+  {\path{doi:10.1109/INFOCOM.2017.8057028}}.
+\newline\urlprefix\url{http://ieeexplore.ieee.org/document/8057028/}
 
 \bibitem{Borst2010}
 S.~Borst, V.~Gupta, A.~Walid, {Distributed caching algorithms for content
@@ -178,5 +147,41 @@ J.~Jiang, V.~Sekar, H.~Milner, D.~Shepherd, I.~Stoica, H.~Zhang,
   \href{https://www.cs.cmu.edu/~junchenj/cfa.pdf}{{CFA: A Practical Prediction
   System for Video QoE Optimization}}.
 \newline\urlprefix\url{https://www.cs.cmu.edu/~junchenj/cfa.pdf}
+
+\bibitem{Zhao2017LearningNetworks}
+R.~Zhao, R.~Yan, J.~Wang, K.~Mao, {Learning to monitor machine health with
+  convolutional Bi-directional LSTM networks}, Sensors (Switzerland) 17~(2)
+  (2017) 1--18.
+\newblock \href {http://dx.doi.org/10.3390/s17020273}
+  {\path{doi:10.3390/s17020273}}.
+
+\bibitem{Yadwadkar2017SelectingClouds}
+N.~J. Yadwadkar, B.~Hariharan, J.~E. Gonzalez, B.~Smith, R.~H. Katz,
+  \href{http://dl.acm.org/citation.cfm?doid=3127479.3131614}{{Selecting the
+  <i>best</i> VM across multiple public clouds}}, in: Proceedings of the 2017
+  Symposium on Cloud Computing - SoCC '17, ACM Press, New York, New York, USA,
+  2017, pp. 452--465.
+\newblock \href {http://dx.doi.org/10.1145/3127479.3131614}
+  {\path{doi:10.1145/3127479.3131614}}.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?doid=3127479.3131614}
+
+\bibitem{Schmidhuber1989}
+J.~Schmidhuber,
+  \href{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B1927E88DDAA6F03912D61DD23B7DABE?doi=10.1.1.51.8813{\&}rep=rep1{\&}type=pdf{\%}0Ahttp://www.tandfonline.com/doi/abs/10.1080/09540098908915650{\%}5Cnhttps://www.tandfonline.com/doi/full/10.1080/09540098908915650{\%}0Ah}{{A
+  local learning algorithm for dynamic feedforward and recurrent networks}},
+  Connection Science 1~(4) (1989) 403--412.
+\newblock \href {http://dx.doi.org/10.1080/09540098908915650}
+  {\path{doi:10.1080/09540098908915650}}.
+\newline\urlprefix\url{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=B1927E88DDAA6F03912D61DD23B7DABE?doi=10.1.1.51.8813{\&}rep=rep1{\&}type=pdf{\%}0Ahttp://www.tandfonline.com/doi/abs/10.1080/09540098908915650{\%}5Cnhttps://www.tandfonline.com/doi/full/10.1080/09540098908915650{\%}0Ah}
+
+\bibitem{Qin}
+Y.~Qin, D.~Song, H.~Chen, W.~Cheng, G.~Jiang, G.~W. Cottrell,
+  \href{http://cseweb.ucsd.edu/{~}yaq007/DA-RNN.pdf}{{A Dual-Stage
+  Attention-Based Recurrent Neural Network for Time Series Prediction}}.
+\newline\urlprefix\url{http://cseweb.ucsd.edu/{~}yaq007/DA-RNN.pdf}
+
+\bibitem{Zhu2017DeepUber}
+L.~Zhu, N.~Laptev, {Deep and Confident Prediction for Time Series at Uber}\href
+  {http://dx.doi.org/10.1109/ICDMW.2017.19} {\path{doi:10.1109/ICDMW.2017.19}}.
 
 \end{thebibliography}
